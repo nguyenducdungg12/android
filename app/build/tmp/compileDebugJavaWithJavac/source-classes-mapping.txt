@@ -1,0 +1,50 @@
+com/deitel/qlsv/MainActivity.java
+ com.deitel.qlsv.MainActivity
+ com.deitel.qlsv.MainActivity$1
+ com.deitel.qlsv.MainActivity$2
+ com.deitel.qlsv.MainActivity$3
+ com.deitel.qlsv.MainActivity$4
+ com.deitel.qlsv.MainActivity$5
+com/deitel/qlsv/models/Student.java
+ com.deitel.qlsv.models.Student
+com/deitel/qlsv/ActivityInformationStudent.java
+ com.deitel.qlsv.ActivityInformationStudent
+com/deitel/qlsv/models/Subject.java
+ com.deitel.qlsv.models.Subject
+com/deitel/qlsv/ActivitySubjectInformation.java
+ com.deitel.qlsv.ActivitySubjectInformation
+com/deitel/qlsv/BuildConfig.java
+ com.deitel.qlsv.BuildConfig
+com/deitel/qlsv/adapter/adaptersubject.java
+ com.deitel.qlsv.adapter.adaptersubject
+ com.deitel.qlsv.adapter.adaptersubject$1
+ com.deitel.qlsv.adapter.adaptersubject$2
+ com.deitel.qlsv.adapter.adaptersubject$3
+com/deitel/qlsv/ActivityUpdateSubject.java
+ com.deitel.qlsv.ActivityUpdateSubject
+ com.deitel.qlsv.ActivityUpdateSubject$1
+ com.deitel.qlsv.ActivityUpdateSubject$2
+com/deitel/qlsv/ActivityAddSubject.java
+ com.deitel.qlsv.ActivityAddSubject
+ com.deitel.qlsv.ActivityAddSubject$1
+ com.deitel.qlsv.ActivityAddSubject$2
+ com.deitel.qlsv.ActivityAddSubject$3
+com/deitel/qlsv/database/database.java
+ com.deitel.qlsv.database.database
+com/deitel/qlsv/ActivitySubject.java
+ com.deitel.qlsv.ActivitySubject
+ com.deitel.qlsv.ActivitySubject$1
+ com.deitel.qlsv.ActivitySubject$2
+ com.deitel.qlsv.ActivitySubject$3
+com/deitel/qlsv/ActivityAddStudent.java
+ com.deitel.qlsv.ActivityAddStudent
+ com.deitel.qlsv.ActivityAddStudent$1
+ com.deitel.qlsv.ActivityAddStudent$2
+ com.deitel.qlsv.ActivityAddStudent$3
+com/deitel/qlsv/adapter/adapterstudent.java
+ com.deitel.qlsv.adapter.adapterstudent
+ com.deitel.qlsv.adapter.adapterstudent$1
+ com.deitel.qlsv.adapter.adapterstudent$2
+ com.deitel.qlsv.adapter.adapterstudent$3
+com/deitel/qlsv/ActivityStudent.java
+ com.deitel.qlsv.ActivityStudent

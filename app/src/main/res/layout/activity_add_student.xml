@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAddSubject">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="#F44336"
+        android:text="Thêm sinh viên">
+    </TextView>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Tên sinh viên"
+        android:id="@+id/EditTextStudentName"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+    </EditText>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:text="Giới tính"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"></TextView>
+    <RadioGroup
+        android:layout_gravity="center"
+        android:paddingTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="70dp">
+        <RadioButton
+            android:textColor="#000000"
+            android:text="Nam"
+            android:checked="true"
+            android:id="@+id/radiobuttonMale"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></RadioButton>
+        <RadioButton
+            android:layout_marginLeft="100dp"
+            android:textColor="#000000"
+            android:text="Nữ"
+            android:id="@+id/radiobuttonFeMale"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"></RadioButton>
+    </RadioGroup>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="MSSV"
+        android:id="@+id/EditTextStudentCode"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+    </EditText>
+    <EditText
+        android:inputType="datetime"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Ngày sinh"
+        android:id="@+id/EditTextStudentBirthday"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+    </EditText>
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttonAddStudent"
+        android:text="Thêm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivitySubjectInformation">
+    <TextView
+        android:textColor="#F00"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:text="Thông tin môn học"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Tên môn học : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+         <TextView
+
+       android:id="@+id/txtSubjectTitle"
+             android:textColor="#000"
+
+             android:text="Android"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+         </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Số tính chỉ : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:textColor="#000"
+
+            android:id="@+id/txtSubjectCredit"
+            android:text="Android"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+        </TextView>
+    </LinearLayout><LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="Thời gian : "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <TextView
+        android:textColor="#000"
+
+        android:id="@+id/txtSubjectTime"
+        android:text="Android"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+    </TextView>
+</LinearLayout><LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="Địa điểm : "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <TextView
+
+        android:id="@+id/txtSubjectPlace"
+        android:text="Android"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+    </TextView>
+</LinearLayout>
+
+
+</LinearLayout>
