@@ -136,4 +136,28 @@ public class database extends SQLiteOpenHelper {
         db.update(TABLE_STUDENT,values,ID_STUDENT+" = "+id,null);
         return true;
     }
+    public Boolean CheckStudentLogin(String mssv){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+STUDENT_CODE+" = ?",new String[]{mssv});
+        if(cursor.getCount()>0)
+            return true;
+        else
+            return false;
+    }
+
+    public Cursor getDataSubjectStudent(String mssv) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT "+TABLE_SUBJECTS+"."+ID_SUBJECTS+","+SUBJECT_TITLE+","+CREDITS+","+TIME+","+PLACE+
+                " FROM "+TABLE_SUBJECTS+" JOIN "+TABLE_STUDENT+
+                " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT+"."+ID_SUBJECTS+
+                " WHERE "+STUDENT_CODE+ " = ?" ,new String[]{mssv});
+//        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS+" JOIN "+TABLE_STUDENT+" ON "+STUDENT_CODE+ " = ?" ,new String[]{mssv});
+        return cursor;
+    }
+
+    public Cursor getDataStudentthroughMSSV(String mssv) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+STUDENT_CODE+" = ?",new String[]{mssv});
+        return res;
+    }
 }

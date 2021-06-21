@@ -1692,6 +1692,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable outline_account_circle_24
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1724,8 +1725,10 @@ id SYM
 id TOP_END
 id TOP_START
 id TextViewCredit
+id TextViewCreditSubjectStudent
 id TextViewStudentCode
 id TextViewStudentName
+id TextViewSubjectStudentTitle
 id TextViewSubjectTitle
 id accelerate
 id accessibility_action_clickable_span
@@ -1800,10 +1803,8 @@ id beginning
 id blocking
 id bottom
 id bounce
-id btnAuthor
-id btnExit
-id btnStudent
-id btnSubject
+id btnlogin
+id btnquit
 id buttonAddStudent
 id buttonAddSubject
 id buttonNo
@@ -1940,7 +1941,10 @@ id linear
 id listMode
 id list_item
 id listviewSubject
+id listviewSubjectStudent
 id listviewsstudent
+id loginmssv
+id loginpassword
 id masked
 id material_clock_display
 id material_clock_face
@@ -1963,6 +1967,7 @@ id material_timepicker_view
 id material_value_index
 id menuadd
 id menuaddstudent
+id menustudent
 id message
 id middle
 id mini
@@ -2098,6 +2103,7 @@ id studentinformation
 id studentupdate
 id subjectdelete
 id subjectinformation
+id subjectstudentinformation
 id subjectupdate
 id submenuarrow
 id submit_area
@@ -2126,7 +2132,9 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
+id textView3
+id textView4
+id textView5
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -2142,6 +2150,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id toolbarSubject
+id toolbarSubjectStudent
 id toolbarstudent
 id top
 id topPanel
@@ -2241,10 +2250,11 @@ layout abc_tooltip
 layout activity_add_student
 layout activity_add_subject
 layout activity_information_student
-layout activity_main
+layout activity_login
 layout activity_student
 layout activity_subject
 layout activity_subject_information
+layout activity_subject_student
 layout activity_update_student
 layout activity_update_subject
 layout custom_dialog
@@ -2268,11 +2278,11 @@ layout dialogaddstudent
 layout dialogdelete
 layout dialogdeletestudent
 layout dialogexit
-layout dialoginformation
 layout dialogupdatestudent
 layout dialogupdatesubject
 layout liststudent
 layout listsubject
+layout listsubjectstudent
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2341,6 +2351,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu menuadd
 menu menuaddstudent
+menu menustudent
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

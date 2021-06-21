@@ -83,7 +83,7 @@ public class ActivitySubject extends AppCompatActivity {
                 startActivity(intent1);
                 break;
             default:
-                Intent intent = new Intent(ActivitySubject.this,MainActivity.class);
+                Intent intent = new Intent(ActivitySubject.this,ActivityLogin.class);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
@@ -91,7 +91,7 @@ public class ActivitySubject extends AppCompatActivity {
     public void onBackPressed(){
         count++;
         if(count>=1){
-            Intent intent = new Intent(ActivitySubject.this,MainActivity.class);
+            Intent intent = new Intent(ActivitySubject.this,ActivityLogin.class);
             startActivity(intent);
             finish();
         }

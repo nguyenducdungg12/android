@@ -19,6 +19,14 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.QLSV" >
+        <activity android:name="com.deitel.qlsv.ActivityLogin" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.deitel.qlsv.ActivitySubjectStudent" />
         <activity android:name="com.deitel.qlsv.ActivityUpdateStudent" />
         <activity android:name="com.deitel.qlsv.ActivityInformationStudent" />
         <activity android:name="com.deitel.qlsv.ActivityAddStudent" />
@@ -27,13 +35,6 @@
         <activity android:name="com.deitel.qlsv.ActivityStudent" />
         <activity android:name="com.deitel.qlsv.ActivitySubject" />
         <activity android:name="com.deitel.qlsv.ActivityAddSubject" />
-        <activity android:name="com.deitel.qlsv.MainActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
