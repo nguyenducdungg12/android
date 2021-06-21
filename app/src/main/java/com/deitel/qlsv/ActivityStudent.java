@@ -4,12 +4,17 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.deitel.qlsv.adapter.adapterstudent;
 import com.deitel.qlsv.database.database;
@@ -122,4 +127,63 @@ public class ActivityStudent extends AppCompatActivity {
             }
         }
     }
+    public void update(final int id_student){
+        Cursor cursor = database.getDataStudent(id_subject);
+        while(cursor.moveToNext()){
+            int id = cursor.getInt(0);
+
+            if(id == id_student){
+                Intent intent = new Intent(ActivityStudent.this,ActivityUpdateStudent.class);
+                intent.putExtra("id",id_student);
+
+                String name = cursor.getString(1);
+                String sex = cursor.getString(2);
+                String code = cursor.getString(3);
+                String birthday = cursor.getString(4);
+                int id_subject = cursor.getInt(5);
+
+                intent.putExtra("name",name);
+                intent.putExtra("sex",sex);
+                intent.putExtra("code",code);
+                intent.putExtra("birthday",birthday);
+                intent.putExtra("id_subject",id_subject);
+
+                startActivity(intent);
+            }
+        }
+        cursor.close();
+    }
+    public void delete(final int id_student){
+
+        Dialog dialog = new Dialog(this);
+
+        dialog.setContentView(R.layout.dialogdeletestudent);
+
+        dialog.setCanceledOnTouchOutside(false);
+
+        dialog.show();
+
+
+        Button btnYes =dialog.findViewById(R.id.buttonYesDeleteStudent);
+        Button btnNo = dialog.findViewById(R.id.buttonNoDeleteStudent);
+        btnYes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                database.DeleteStudent(id_student);
+                Intent intent = new Intent(ActivityStudent.this,ActivityStudent.class);
+                intent.putExtra("id_subject",id_subject);
+                startActivity(intent);
+
+                Toast.makeText(ActivityStudent.this,"Xóa Sinh viên thành công",Toast.LENGTH_SHORT).show();
+            }
+        });
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.cancel();
+            }
+        });
+
+    }
+
 }

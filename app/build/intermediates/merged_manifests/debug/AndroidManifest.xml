@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.QLSV" >
+        <activity android:name="com.deitel.qlsv.ActivityUpdateStudent" />
         <activity android:name="com.deitel.qlsv.ActivityInformationStudent" />
         <activity android:name="com.deitel.qlsv.ActivityAddStudent" />
         <activity android:name="com.deitel.qlsv.ActivityUpdateSubject" />

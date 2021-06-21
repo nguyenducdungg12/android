@@ -129,7 +129,6 @@ public class ActivitySubject extends AppCompatActivity {
         Button btnYes = dialog.findViewById(R.id.buttonYesDeleteSubject);
         Button btnNo = dialog.findViewById(R.id.buttonNoDeleteSubject);
 
-        Log.d("delete", "delete: "+btnYes);
 
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override

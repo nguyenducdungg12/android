@@ -49,7 +49,6 @@ public class adaptersubject extends BaseAdapter {
         ImageButton imageInformation = (ImageButton)convertView.findViewById(R.id.subjectinformation);
         ImageButton imageUpdate = (ImageButton)convertView.findViewById(R.id.subjectupdate);
         Subject subject = ArrayListSubject.get(position);
-        Log.d("TAG", ""+subject.getNumber_of_credit());
         TextViewCredit.setText(subject.getNumber_of_credit()+"");
         TextViewSubjectTitle.setText(subject.getSubject_title());
         int id = subject.getId();

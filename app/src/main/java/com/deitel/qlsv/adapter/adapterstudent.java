@@ -62,14 +62,14 @@ public class adapterstudent extends BaseAdapter {
         imgbtnDelete.setOnClickListener((new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                context.delete(id);
             }
         }));
 
         imgbtnupdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                context.update(id);
             }
         });
 

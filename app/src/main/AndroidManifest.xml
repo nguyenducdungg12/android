@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QLSV">
-        <activity android:name=".ActivityInformationStudent"></activity>
+        <activity android:name=".ActivityUpdateStudent"></activity>
+        <activity android:name=".ActivityInformationStudent" />
         <activity android:name=".ActivityAddStudent" />
         <activity android:name=".ActivityUpdateSubject" />
         <activity android:name=".ActivitySubjectInformation" />

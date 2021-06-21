@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -75,6 +76,8 @@ public class ActivityUpdateSubject extends AppCompatActivity {
                     Subject subject = UpdateObject();
                     database.UpdateSubject(subject,id);
                     Intent intent = new Intent(ActivityUpdateSubject.this,ActivitySubject.class);
+                    Toast.makeText(ActivityUpdateSubject.this,"Cập nhật thành công",Toast.LENGTH_SHORT).show();
+
                     startActivity(intent);
                     Toast.makeText(ActivityUpdateSubject.this,"Cập nhật thành công",Toast.LENGTH_SHORT).show();
 
