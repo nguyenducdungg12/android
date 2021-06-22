@@ -56,14 +56,13 @@ public class ActivityStudent extends AppCompatActivity {
 
         Cursor cursor = database.getDataStudent(id_subject);
         while(cursor.moveToNext()){
-            int id_sub = cursor.getInt(5);
             int id = cursor.getInt(0);
             String name = cursor.getString(1);
             String sex = cursor.getString(2);
             String code =  cursor.getString(3);
             String birthday = cursor.getString(4);
 
-            ArrayListStudent.add(new Student (id,name,sex,code,birthday,id_sub));
+            ArrayListStudent.add(new Student (id,name,sex,code,birthday));
         }
         adapterstudent = new adapterstudent(ActivityStudent.this,ArrayListStudent);
 
@@ -83,7 +82,7 @@ public class ActivityStudent extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item){
         switch(item.getItemId()){
             case R.id.menuaddstudent:
-                Intent intent = new Intent(ActivityStudent.this,ActivityAddStudent.class);
+                Intent intent = new Intent(ActivityStudent.this,ActivityAddStudenttoSubject.class);
                 intent.putExtra("id_subject",id_subject);
                 startActivity(intent);
                 break;
@@ -128,7 +127,7 @@ public class ActivityStudent extends AppCompatActivity {
         }
     }
     public void update(final int id_student){
-        Cursor cursor = database.getDataStudent(id_subject);
+        Cursor cursor = database.getDataAllStudent();
         while(cursor.moveToNext()){
             int id = cursor.getInt(0);
 
@@ -169,11 +168,10 @@ public class ActivityStudent extends AppCompatActivity {
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                database.DeleteStudent(id_student);
+                database.DeleteStudentSubject(id_student);
                 Intent intent = new Intent(ActivityStudent.this,ActivityStudent.class);
                 intent.putExtra("id_subject",id_subject);
                 startActivity(intent);
-
                 Toast.makeText(ActivityStudent.this,"Xóa Sinh viên thành công",Toast.LENGTH_SHORT).show();
             }
         });

@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".ActivityAddSubject">
+    tools:context=".ActivityAddSubject"
+    android:background="@drawable/background">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
         android:layout_gravity="center"
-        android:textStyle="bold"
+        android:layout_marginTop="80dp"
+        android:text="Sửa thông tin sinh viên"
+        android:textColor="#FFFFFF"
         android:textSize="30sp"
-        android:textColor="#F44336"
-        android:text="Sửa thông tin sinh viên">
-    </TextView>
+        android:textStyle="bold"></TextView>
     <EditText
         android:layout_marginTop="20dp"
         android:layout_gravity="center"
@@ -25,14 +26,15 @@
         android:layout_height="60dp">
 
     </EditText>
+
     <TextView
-        android:layout_marginTop="10dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:text="Giới tính"
-        android:layout_gravity="center"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"></TextView>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Giới tính"
+        android:textColor="#393131"
+        android:textSize="20sp"></TextView>
     <RadioGroup
         android:layout_gravity="center"
         android:paddingTop="15dp"
@@ -73,12 +75,13 @@
         android:layout_width="300dp"
         android:layout_height="60dp">
     </EditText>
+
     <Button
-        android:layout_gravity="center"
         android:id="@+id/buttonUpdateStudent"
-        android:text="Sửa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sửa">
 
     </Button>
 

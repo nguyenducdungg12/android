@@ -31,6 +31,5 @@ public class ActivityInformationStudent extends AppCompatActivity {
         txtSex.setText(sex);
         txtCode.setText(code);
         txtBirthday.setText(birthday);
-
     }
 }

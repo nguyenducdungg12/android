@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ActivityAdmin">
+
+    <Button
+        android:id="@+id/btnlistsubjectadmin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="24dp"
+        android:text="Danh sách các môn học"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/btnaddstudentadmin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:text="Thêm Sinh Viên"
+        app:layout_constraintEnd_toEndOf="@+id/btnlistsubjectadmin"
+        app:layout_constraintStart_toStartOf="@+id/btnlistsubjectadmin"
+        app:layout_constraintTop_toBottomOf="@+id/btnlistsubjectadmin" />
+
+    <Button
+        android:id="@+id/btnlogoutadmin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Đăng xuất"
+        app:layout_constraintEnd_toEndOf="@+id/btnliststudentsubject"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnliststudentsubject"
+        app:layout_constraintTop_toBottomOf="@+id/btnliststudentsubject" />
+
+    <Button
+        android:id="@+id/btnliststudentsubject"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Danh sách các sinh viên"
+        app:layout_constraintEnd_toEndOf="@+id/btnaddstudentadmin"
+        app:layout_constraintStart_toStartOf="@+id/btnaddstudentadmin"
+        app:layout_constraintTop_toBottomOf="@+id/btnaddstudentadmin" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="ADMIN"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="216dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/unnamed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

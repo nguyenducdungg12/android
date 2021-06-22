@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivitySubjectInformation">
+    tools:context=".ActivitySubjectInformation"
+    android:background="@drawable/background">
+
     <TextView
-        android:textColor="#F00"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="Thông tin sinh viên"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-    </TextView>
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:text="Thông tin sinh viên"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -24,23 +24,24 @@
         android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
         android:layout_marginLeft="20dp">
+
         <TextView
-            android:textColor="#000"
-            android:textSize="20sp"
-            android:text="Tên sinh viên : "
             android:layout_width="wrap_content"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:text="Tên sinh viên : "
+            android:textColor="#000000"
+            android:textSize="20sp">
 
         </TextView>
+
         <TextView
 
             android:id="@+id/txtStudentName"
-            android:textColor="#000"
-            android:text="Name"
-            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            >
+            android:text="Name"
+            android:textColor="#433F3F"
+            android:textSize="20dp">
 
         </TextView>
     </LinearLayout>
@@ -57,17 +58,15 @@
             android:text="Giới tính : "
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
-
         </TextView>
-        <TextView
-            android:textColor="#000"
 
+        <TextView
             android:id="@+id/txtStudentSex"
-            android:text="Nam"
-            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            >
+            android:text="Nam"
+            android:textColor="#433F3F"
+            android:textSize="20dp">
 
         </TextView>
     </LinearLayout><LinearLayout
@@ -85,15 +84,15 @@
         android:layout_height="match_parent">
 
     </TextView>
-    <TextView
-        android:textColor="#000"
 
+    <TextView
         android:id="@+id/txtStudentCode"
-        android:text="Android"
-        android:textSize="20dp"
+
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        >
+        android:text="Android"
+        android:textColor="#433F3F"
+        android:textSize="20dp">
 
     </TextView>
 </LinearLayout><LinearLayout
@@ -111,16 +110,22 @@
         android:layout_height="match_parent">
 
     </TextView>
+
     <TextView
         android:id="@+id/txtStudentdateofbirth"
-        android:text="Android"
-        android:textSize="20dp"
-        android:textColor="#000"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        >
-    </TextView>
+        android:text="Android"
+        android:textColor="#433F3F"
+        android:textSize="20dp"></TextView>
 </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        app:srcCompat="@drawable/profilesv" />
 
 
 </LinearLayout>

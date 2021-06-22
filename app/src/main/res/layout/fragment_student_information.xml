@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".FragmentStudentInformation">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSubjectStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#044763"
+        app:title="Hồ sơ sinh viên"
+        app:titleTextColor="@color/white">
+
+        <Button
+            android:id="@+id/btnlogoutstudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:text="Đăng xuất"></Button>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Tên sinh viên : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+
+            android:id="@+id/txtStudentName"
+            android:textColor="#000"
+            android:text="Name"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:text="Giới tính : "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        </TextView>
+        <TextView
+            android:textColor="#000"
+
+            android:id="@+id/txtStudentSex"
+            android:text="Nam"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            >
+
+        </TextView>
+    </LinearLayout><LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="MSSV : "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <TextView
+        android:textColor="#000"
+
+        android:id="@+id/txtStudentCode"
+        android:text="Android"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+    </TextView>
+</LinearLayout>
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp">
+    <TextView
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:text="Ngày sinh : "
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+    </TextView>
+    <TextView
+        android:id="@+id/txtStudentdateofbirth"
+        android:text="Android"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+    </TextView>
+</LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="278dp"
+        android:src="@drawable/truongdh" />
+
+
+</LinearLayout>

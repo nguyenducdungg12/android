@@ -1,15 +1,123 @@
 [
     {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_admin.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_subject.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_add_subject.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_student_information.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\fragment_student_information.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable-v24\\background.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_show_all_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_show_all_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogexit.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogexit.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_liststudentsubject.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\liststudentsubject.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_delete_24.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_update_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_update_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_unnamed.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\unnamed.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_studentto_subject.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_add_studentto_subject.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogupdatestudent.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogupdatestudent.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_subject.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\subject.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "E:\\android-main\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_outline_24.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_outline_24.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_update_subject.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_update_subject.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_subject_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\fragment_subject_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogupdatesubject.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogupdatesubject.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_add_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_profilesv.webp.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\profilesv.webp"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_information_student.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_information_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_subject.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_subject.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogadd.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogadd.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_subject.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_add_subject.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_listsubject.xml.flat",
@@ -20,16 +128,8 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_subject_information.xml"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
-    },
-    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_subject_student.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_subject_student.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogaddstudent.xml.flat",
@@ -48,48 +148,28 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\menu\\menustudent.xml"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_background.png.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\drawable-v24\\background.png"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_truongdh.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable-v24\\truongdh.png"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\menu_menuaddstudent.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\menu\\menuaddstudent.xml"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogexit.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogexit.xml"
-    },
-    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_delete_24.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_baseline_delete_24.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_update_student.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_update_student.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogdeletestudent.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogdeletestudent.xml"
     },
     {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\navigation_nav_graph.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\navigation\\nav_graph.xml"
+    },
+    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_outline_account_circle_24.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\drawable-v24\\outline_account_circle_24.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogupdatestudent.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogupdatestudent.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_listsubjectstudent.xml.flat",
@@ -104,20 +184,12 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\liststudent.xml"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogdelete.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogdelete.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "E:\\android-main\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
-    },
-    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_student.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_student.xml"
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogdelete.xml.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogdelete.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
@@ -128,12 +200,8 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_add_circle_outline_24.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_baseline_add_circle_outline_24.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_update_subject.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_update_subject.xml"
+        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_linear.png.flat",
+        "source": "E:\\android-main\\app\\src\\main\\res\\drawable-v24\\linear.png"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.png.flat",
@@ -144,28 +212,8 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\drawable\\ic_baseline_update_24.xml"
     },
     {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_dialogupdatesubject.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\dialogupdatesubject.xml"
-    },
-    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\menu_menuadd.xml.flat",
         "source": "E:\\android-main\\app\\src\\main\\res\\menu\\menuadd.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_add_student.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_add_student.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_information_student.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_information_student.xml"
-    },
-    {
-        "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
-        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",

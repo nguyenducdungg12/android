@@ -33,19 +33,16 @@ public class ActivityAddStudent extends AppCompatActivity {
         radiobuttonFemale = findViewById(R.id.radiobuttonFeMale);
         radiobuttonMale = findViewById(R.id.radiobuttonMale);
 
-        Intent intent = getIntent();
-        int id_subject = intent.getIntExtra("id_subject",0);
-
         database = new database(this);
         buttonAddStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogAdd(id_subject);
+                DialogAdd();
             }
         });
     }
 
-    private void DialogAdd(int id_subject) {
+    private void DialogAdd() {
         Dialog dialog = new Dialog( this);
         dialog.setContentView(R.layout.dialogaddstudent);
         dialog.setCanceledOnTouchOutside(false);
@@ -70,13 +67,10 @@ public class ActivityAddStudent extends AppCompatActivity {
                     Toast.makeText(ActivityAddStudent.this,"Bạn chưa nhập đủ dữ liệu",Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Student student = CreateStudent(id_subject);
+                    Student student = CreateStudent();
                     database.AddStudent(student);
-
-                    Intent intent = new Intent(ActivityAddStudent.this,ActivityStudent.class);
-                    intent.putExtra("id_subject",id_subject);
+                    Intent intent = new Intent(ActivityAddStudent.this,ActivityAdmin.class);
                     startActivity(intent);
-
                     Toast.makeText(ActivityAddStudent.this,"Thêm thành công",Toast.LENGTH_SHORT).show();
                 }
             }
@@ -89,7 +83,7 @@ public class ActivityAddStudent extends AppCompatActivity {
         });
         dialog.show();
     }
-    private Student CreateStudent(int id_subject){
+    private Student CreateStudent(){
         String name = editTextStudentName.getText().toString().trim();
         String code = editTextStudentCode.getText().toString().trim();
         String birthday = editTextDateofbirth.getText().toString().trim();
@@ -101,7 +95,7 @@ public class ActivityAddStudent extends AppCompatActivity {
             sex="Nữ";
         }
 
-        Student student = new Student(name,sex,code,birthday,id_subject);
+        Student student = new Student(name,sex,code,birthday);
         return student;
     }
 }

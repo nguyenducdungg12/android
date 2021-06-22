@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -33,12 +34,10 @@ public class ActivitySubject extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_subject);
-
         toolbar = findViewById(R.id.toolbarSubject);
         listViewSubject = findViewById(R.id.listviewSubject);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         database = new database(this);
 
         ArrayListSubject = new ArrayList<>();
@@ -83,7 +82,7 @@ public class ActivitySubject extends AppCompatActivity {
                 startActivity(intent1);
                 break;
             default:
-                Intent intent = new Intent(ActivitySubject.this,ActivityLogin.class);
+                Intent intent = new Intent(ActivitySubject.this,ActivityAdmin.class);
                 startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
@@ -91,7 +90,7 @@ public class ActivitySubject extends AppCompatActivity {
     public void onBackPressed(){
         count++;
         if(count>=1){
-            Intent intent = new Intent(ActivitySubject.this,ActivityLogin.class);
+            Intent intent = new Intent(ActivitySubject.this, ActivityAdmin.class);
             startActivity(intent);
             finish();
         }

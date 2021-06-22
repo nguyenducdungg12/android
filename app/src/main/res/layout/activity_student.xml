@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ActivityStudent">
+    tools:context=".ActivityStudent"
+    android:background="@drawable/background">
     <androidx.appcompat.widget.Toolbar
-        app:title="Student"
+        app:title="Sinh viên trong môn học"
         android:id="@+id/toolbarstudent"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize">
+        android:layout_height="?attr/actionBarSize"
+        app:titleTextColor="@color/white">
     </androidx.appcompat.widget.Toolbar>
     <ListView
         android:id="@+id/listviewsstudent"

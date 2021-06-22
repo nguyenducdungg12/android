@@ -31,7 +31,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         editTextUpdateCode = findViewById(R.id.EditTextStudentCodeUpdate);
 
         rdFemale = findViewById(R.id.radiobuttonFeMaleUpdate);
-        rdMale = findViewById(R.id.radiobuttonFeMaleUpdate);
+        rdMale = findViewById(R.id.radiobuttonMaleUpdate);
 
         btnUpdateStudent = findViewById(R.id.buttonUpdateStudent);
         database = new database(this);
@@ -40,10 +40,10 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         int id = intent.getIntExtra("id",0);
         String name = intent.getStringExtra("name");
         String sex = intent.getStringExtra("sex");
+        System.out.println(sex);
         String code = intent.getStringExtra("code");
         String birthday = intent.getStringExtra("birthday");
 
-        int id_subject = intent.getIntExtra("id_subject",0);
 
         //gán giá trị lên editext và radiobtn
 
@@ -51,7 +51,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         editTextUpdateCode.setText(code);
         editTextUpdateBirthday.setText(birthday);
 
-        if(sex.equals("Male")){
+        if(sex.equals("Nam")){
             rdMale.setChecked(true);
             rdFemale.setChecked(false);
         }
@@ -62,12 +62,12 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         btnUpdateStudent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogUpdate(id,id_subject);
+                DialogUpdate(id);
             }
         });
     }
 
-    private void DialogUpdate(int id,int id_subject) {
+    private void DialogUpdate(int id) {
 
         Dialog dialog = new Dialog(this);
 
@@ -76,6 +76,7 @@ public class ActivityUpdateStudent extends AppCompatActivity {
         dialog.setCanceledOnTouchOutside(false);
 
         dialog.show();
+        Button btnNo = dialog.findViewById(R.id.buttonNoUpdate);
         Button btnYes = dialog.findViewById(R.id.buttonYesupdateStudent);
         btnYes.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,11 +90,16 @@ public class ActivityUpdateStudent extends AppCompatActivity {
                 else{
                     Student student = createStudent();
                     database.UpdateStudent(student,id);
-                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityStudent.class);
-                    intent.putExtra("id_subject",id_subject);
+                    Intent intent = new Intent(ActivityUpdateStudent.this,ActivityAdmin.class);
                     startActivity(intent);
-                    Toast.makeText(ActivityUpdateStudent.this,"Thêm thành công",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityUpdateStudent.this,"Sửa thành công",Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        btnNo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                    dialog.cancel();
             }
         });
     }

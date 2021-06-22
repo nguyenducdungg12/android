@@ -25,18 +25,19 @@ public class ActivityLogin extends AppCompatActivity {
         loginmssv=findViewById(R.id.loginmssv);
         loginpassword=findViewById(R.id.loginpassword);
         database = new database(this);
+//        this.deleteDatabase("studentmanagement");
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Boolean checkStudent= database.CheckStudentLogin(loginmssv.getText().toString());
-                if(loginmssv.getText().toString().equals("admin")&&loginpassword.getText().toString().equals("admin")) {
-                    Intent intent = new Intent(ActivityLogin.this, ActivitySubject.class);
+                if(loginmssv.getText().toString().trim().equals("admin")&&loginpassword.getText().toString().trim().equals("admin")) {
+                    Intent intent = new Intent(ActivityLogin.this, ActivityAdmin.class);
                     startActivity(intent);
                 }
-                else if(loginmssv.getText().toString().equals("")||loginpassword.getText().toString().equals("")){
+                else if(loginmssv.getText().toString().trim().equals("")||loginpassword.getText().toString().trim().equals("")){
                     Toast.makeText(ActivityLogin.this,"Chưa có thông tin đăng nhập của bạn",Toast.LENGTH_SHORT).show();
                 }
-                else if(checkStudent==true&&loginmssv.getText().toString().equals(loginpassword.getText().toString())){
+                else if(checkStudent==true&&loginmssv.getText().toString().trim().equals(loginpassword.getText().toString().trim())){
                     Intent intent = new Intent(ActivityLogin.this, ActivitySubjectStudent.class);
                     intent.putExtra("MSSV",loginmssv.getText().toString());
                     startActivity(intent);

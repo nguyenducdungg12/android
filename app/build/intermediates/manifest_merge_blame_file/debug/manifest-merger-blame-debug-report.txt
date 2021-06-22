@@ -11,7 +11,7 @@
 9-->E:\android-main\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->E:\android-main\app\src\main\AndroidManifest.xml:5:5-27:19
+11-->E:\android-main\app\src\main\AndroidManifest.xml:5:5-36:19
 12        android:allowBackup="true"
 12-->E:\android-main\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -29,47 +29,67 @@
 20        android:testOnly="true"
 21        android:theme="@style/Theme.QLSV" >
 21-->E:\android-main\app\src\main\AndroidManifest.xml:11:9-42
-22        <activity android:name="com.deitel.qlsv.ActivityLogin" >
-22-->E:\android-main\app\src\main\AndroidManifest.xml:12:9-17:20
-22-->E:\android-main\app\src\main\AndroidManifest.xml:12:19-48
-23            <intent-filter>
-23-->E:\android-main\app\src\main\AndroidManifest.xml:13:13-16:29
-24                <action android:name="android.intent.action.MAIN" />
-24-->E:\android-main\app\src\main\AndroidManifest.xml:14:17-69
-24-->E:\android-main\app\src\main\AndroidManifest.xml:14:25-66
-25
-26                <category android:name="android.intent.category.LAUNCHER" />
-26-->E:\android-main\app\src\main\AndroidManifest.xml:15:17-77
-26-->E:\android-main\app\src\main\AndroidManifest.xml:15:27-74
-27            </intent-filter>
-28        </activity>
-29        <activity android:name="com.deitel.qlsv.ActivitySubjectStudent" />
-29-->E:\android-main\app\src\main\AndroidManifest.xml:18:9-60
-29-->E:\android-main\app\src\main\AndroidManifest.xml:18:19-57
-30        <activity android:name="com.deitel.qlsv.ActivityUpdateStudent" />
-30-->E:\android-main\app\src\main\AndroidManifest.xml:19:9-59
-30-->E:\android-main\app\src\main\AndroidManifest.xml:19:19-56
-31        <activity android:name="com.deitel.qlsv.ActivityInformationStudent" />
-31-->E:\android-main\app\src\main\AndroidManifest.xml:20:9-64
-31-->E:\android-main\app\src\main\AndroidManifest.xml:20:19-61
-32        <activity android:name="com.deitel.qlsv.ActivityAddStudent" />
-32-->E:\android-main\app\src\main\AndroidManifest.xml:21:9-56
-32-->E:\android-main\app\src\main\AndroidManifest.xml:21:19-53
-33        <activity android:name="com.deitel.qlsv.ActivityUpdateSubject" />
-33-->E:\android-main\app\src\main\AndroidManifest.xml:22:9-59
-33-->E:\android-main\app\src\main\AndroidManifest.xml:22:19-56
-34        <activity android:name="com.deitel.qlsv.ActivitySubjectInformation" />
-34-->E:\android-main\app\src\main\AndroidManifest.xml:23:9-64
-34-->E:\android-main\app\src\main\AndroidManifest.xml:23:19-61
-35        <activity android:name="com.deitel.qlsv.ActivityStudent" />
-35-->E:\android-main\app\src\main\AndroidManifest.xml:24:9-53
-35-->E:\android-main\app\src\main\AndroidManifest.xml:24:19-50
-36        <activity android:name="com.deitel.qlsv.ActivitySubject" />
-36-->E:\android-main\app\src\main\AndroidManifest.xml:25:9-53
-36-->E:\android-main\app\src\main\AndroidManifest.xml:25:19-50
-37        <activity android:name="com.deitel.qlsv.ActivityAddSubject" />
-37-->E:\android-main\app\src\main\AndroidManifest.xml:26:9-56
-37-->E:\android-main\app\src\main\AndroidManifest.xml:26:19-53
-38    </application>
-39
-40</manifest>
+22        <activity android:name="com.deitel.qlsv.ActivityShowAllStudent" />
+22-->E:\android-main\app\src\main\AndroidManifest.xml:12:9-69
+22-->E:\android-main\app\src\main\AndroidManifest.xml:12:19-57
+23        <activity
+23-->E:\android-main\app\src\main\AndroidManifest.xml:13:9-16:61
+24            android:name="com.deitel.qlsv.ActivityAllStudent"
+24-->E:\android-main\app\src\main\AndroidManifest.xml:14:13-47
+25            android:label="@string/title_activity_all_student"
+25-->E:\android-main\app\src\main\AndroidManifest.xml:15:13-63
+26            android:theme="@style/Theme.QLSV.NoActionBar" />
+26-->E:\android-main\app\src\main\AndroidManifest.xml:16:13-58
+27        <activity android:name="com.deitel.qlsv.ActivityAddStudenttoSubject" />
+27-->E:\android-main\app\src\main\AndroidManifest.xml:17:9-65
+27-->E:\android-main\app\src\main\AndroidManifest.xml:17:19-62
+28        <activity android:name="com.deitel.qlsv.ActivityAdmin" />
+28-->E:\android-main\app\src\main\AndroidManifest.xml:18:9-51
+28-->E:\android-main\app\src\main\AndroidManifest.xml:18:19-48
+29        <activity android:name="com.deitel.qlsv.models.ActivityAdmin" />
+29-->E:\android-main\app\src\main\AndroidManifest.xml:19:9-58
+29-->E:\android-main\app\src\main\AndroidManifest.xml:19:19-55
+30        <activity android:name="com.deitel.qlsv.ActivityLogin" >
+30-->E:\android-main\app\src\main\AndroidManifest.xml:20:9-26:20
+30-->E:\android-main\app\src\main\AndroidManifest.xml:20:19-48
+31            <intent-filter>
+31-->E:\android-main\app\src\main\AndroidManifest.xml:21:13-25:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->E:\android-main\app\src\main\AndroidManifest.xml:22:17-69
+32-->E:\android-main\app\src\main\AndroidManifest.xml:22:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->E:\android-main\app\src\main\AndroidManifest.xml:24:17-77
+34-->E:\android-main\app\src\main\AndroidManifest.xml:24:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.deitel.qlsv.ActivitySubjectStudent" />
+37-->E:\android-main\app\src\main\AndroidManifest.xml:27:9-60
+37-->E:\android-main\app\src\main\AndroidManifest.xml:27:19-57
+38        <activity android:name="com.deitel.qlsv.ActivityUpdateStudent" />
+38-->E:\android-main\app\src\main\AndroidManifest.xml:28:9-59
+38-->E:\android-main\app\src\main\AndroidManifest.xml:28:19-56
+39        <activity android:name="com.deitel.qlsv.ActivityInformationStudent" />
+39-->E:\android-main\app\src\main\AndroidManifest.xml:29:9-64
+39-->E:\android-main\app\src\main\AndroidManifest.xml:29:19-61
+40        <activity android:name="com.deitel.qlsv.ActivityAddStudent" />
+40-->E:\android-main\app\src\main\AndroidManifest.xml:30:9-56
+40-->E:\android-main\app\src\main\AndroidManifest.xml:30:19-53
+41        <activity android:name="com.deitel.qlsv.ActivityUpdateSubject" />
+41-->E:\android-main\app\src\main\AndroidManifest.xml:31:9-59
+41-->E:\android-main\app\src\main\AndroidManifest.xml:31:19-56
+42        <activity android:name="com.deitel.qlsv.ActivitySubjectInformation" />
+42-->E:\android-main\app\src\main\AndroidManifest.xml:32:9-64
+42-->E:\android-main\app\src\main\AndroidManifest.xml:32:19-61
+43        <activity android:name="com.deitel.qlsv.ActivityStudent" />
+43-->E:\android-main\app\src\main\AndroidManifest.xml:33:9-53
+43-->E:\android-main\app\src\main\AndroidManifest.xml:33:19-50
+44        <activity android:name="com.deitel.qlsv.ActivitySubject" />
+44-->E:\android-main\app\src\main\AndroidManifest.xml:34:9-53
+44-->E:\android-main\app\src\main\AndroidManifest.xml:34:19-50
+45        <activity android:name="com.deitel.qlsv.ActivityAddSubject" />
+45-->E:\android-main\app\src\main\AndroidManifest.xml:35:9-56
+45-->E:\android-main\app\src\main\AndroidManifest.xml:35:19-53
+46    </application>
+47
+48</manifest>

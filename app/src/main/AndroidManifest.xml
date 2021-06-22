@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.QLSV">
+        <activity android:name=".ActivityShowAllStudent"></activity>
+        <activity
+            android:name=".ActivityAllStudent"
+            android:label="@string/title_activity_all_student"
+            android:theme="@style/Theme.QLSV.NoActionBar" />
+        <activity android:name=".ActivityAddStudenttoSubject" />
+        <activity android:name=".ActivityAdmin" />
+        <activity android:name=".models.ActivityAdmin" />
         <activity android:name=".ActivityLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

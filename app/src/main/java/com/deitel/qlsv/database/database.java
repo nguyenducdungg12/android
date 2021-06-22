@@ -31,6 +31,8 @@ public class database extends SQLiteOpenHelper {
     private static String STUDENT_CODE = "studentcode";
     private static String DATE_OF_BIRTH = "dateofbirth";
 
+    //Bảng sinh viên môn học
+    private static String TABLE_STUDENT_SUBJECTS = "studentsubject";
 
     //Tạo bảng môn học
     private String SQLQuery = "CREATE TABLE "+ TABLE_SUBJECTS +" ( "+ID_SUBJECTS+" INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -44,9 +46,15 @@ public class database extends SQLiteOpenHelper {
             +STUDENT_NAME+" TEXT, "
             +SEX+" TEXT, "
             +STUDENT_CODE+" TEXT, "
-            +DATE_OF_BIRTH+" TEXT, "
-            +ID_SUBJECTS+" INTEGER , FOREIGN KEY ( "+ ID_SUBJECTS +" ) REFERENCES "+
-            TABLE_SUBJECTS+"("+ID_SUBJECTS+"))";
+            +DATE_OF_BIRTH+" TEXT)";
+
+    // Tạo bảng sinh viên môn học
+    private String SQLQuery2 = "CREATE TABLE "+ TABLE_STUDENT_SUBJECTS +" ( "
+            +ID_STUDENT+" INTEGER ,"
+            +ID_SUBJECTS+" INTEGER , " +
+            "FOREIGN KEY ( "+ ID_SUBJECTS +" ) REFERENCES "+ TABLE_SUBJECTS+"("+ID_SUBJECTS+"),"+
+            "FOREIGN KEY ( "+ ID_STUDENT +" ) REFERENCES "+ TABLE_STUDENT+"("+ID_STUDENT+"),"+
+            "PRIMARY KEY ("+ID_STUDENT+" , "+ID_SUBJECTS+"))";
 
     public database(@Nullable Context context) {
         super(context, DATABASE_NAME,null,VERSION);
@@ -56,6 +64,7 @@ public class database extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         sqLiteDatabase.execSQL(SQLQuery);
         sqLiteDatabase.execSQL(SQLQuery1);
+        sqLiteDatabase.execSQL(SQLQuery2);
     }
 
     @Override
@@ -99,7 +108,13 @@ public class database extends SQLiteOpenHelper {
 
     public int DeleteSubjectStudent(int i){
         SQLiteDatabase db = this.getWritableDatabase();
-        int res = db.delete(TABLE_STUDENT,ID_SUBJECTS+" = "+i,null);
+        int res = db.delete(TABLE_STUDENT_SUBJECTS,ID_SUBJECTS+" = "+i,null);
+        return res;
+    }
+
+    public int DeleteStudentSubject(int i){
+        SQLiteDatabase db = this.getWritableDatabase();
+        int res = db.delete(TABLE_STUDENT_SUBJECTS,ID_STUDENT+" = "+i,null);
         return res;
     }
 
@@ -110,14 +125,39 @@ public class database extends SQLiteOpenHelper {
         values.put(SEX,student.getSex());
         values.put(STUDENT_CODE,student.getStudent_code());
         values.put(DATE_OF_BIRTH,student.getData_of_birth());
-        values.put(ID_SUBJECTS,student.getId_subject());
         db.insert(TABLE_STUDENT,null,values);
         db.close();
     }
+
+    public boolean AddStudentToSubject(int id_student,int id_subject){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_STUDENT_SUBJECTS+" WHERE "+ID_STUDENT+" = "+id_student+" AND "+ID_SUBJECTS+" = "+id_subject,null);
+        if(cursor.getCount()>0)
+            return false;
+        else{
+            values.put(ID_STUDENT,id_student);
+            values.put(ID_SUBJECTS,id_subject);
+            db.insert(TABLE_STUDENT_SUBJECTS,null,values);
+            db.close();
+            return true;
+        }
+    }
+
 // Lấy tất cả sinh viên thuộc môn học đó
     public Cursor getDataStudent(int id_subject){
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res =db.rawQuery("SELECT * FROM "+TABLE_STUDENT+" WHERE "+ID_SUBJECTS+" = "+id_subject,null);
+        Cursor res =db.rawQuery(
+                "SELECT * FROM "+TABLE_STUDENT+
+                " JOIN "+TABLE_STUDENT_SUBJECTS+
+                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT+"."+ID_STUDENT+
+                " WHERE "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+" = "+id_subject,null);
+        return res;
+    }
+
+    public Cursor getDataAllStudent(){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =db.rawQuery("SELECT * FROM "+TABLE_STUDENT,null);
         return res;
     }
 
@@ -147,11 +187,18 @@ public class database extends SQLiteOpenHelper {
 
     public Cursor getDataSubjectStudent(String mssv) {
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT "+TABLE_SUBJECTS+"."+ID_SUBJECTS+","+SUBJECT_TITLE+","+CREDITS+","+TIME+","+PLACE+
-                " FROM "+TABLE_SUBJECTS+" JOIN "+TABLE_STUDENT+
-                " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT+"."+ID_SUBJECTS+
-                " WHERE "+STUDENT_CODE+ " = ?" ,new String[]{mssv});
-//        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS+" JOIN "+TABLE_STUDENT+" ON "+STUDENT_CODE+ " = ?" ,new String[]{mssv});
+        Cursor cursor = db.rawQuery(
+                "SELECT "+TABLE_SUBJECTS+"."+ID_SUBJECTS+","
+                +TABLE_SUBJECTS+"."+SUBJECT_TITLE+","
+                +TABLE_SUBJECTS+"."+CREDITS+","
+                +TABLE_SUBJECTS+"."+TIME+","
+                +TABLE_SUBJECTS+"."+PLACE+
+                " FROM "+TABLE_SUBJECTS +
+                " JOIN "+TABLE_STUDENT_SUBJECTS+
+                " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+
+                " JOIN "+TABLE_STUDENT+
+                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
+                " WHERE "+TABLE_STUDENT+"."+STUDENT_CODE+ " = ?" ,new String[]{mssv});
         return cursor;
     }
 

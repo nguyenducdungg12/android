@@ -9,16 +9,17 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.deitel.qlsv.ActivitySubjectStudent;
+import com.deitel.qlsv.FragmentSubjectStudent;
 import com.deitel.qlsv.R;
 import com.deitel.qlsv.models.Subject;
 
 import java.util.ArrayList;
 
 public class adaptersubjectstudent extends BaseAdapter {
-    private ActivitySubjectStudent context;
+    private FragmentSubjectStudent context;
     private ArrayList<Subject> ArrayListSubject;
 
-    public adaptersubjectstudent(ActivitySubjectStudent context, ArrayList<Subject> arrayListSubject) {
+    public adaptersubjectstudent(FragmentSubjectStudent context, ArrayList<Subject> arrayListSubject) {
         this.context = context;
         ArrayListSubject = arrayListSubject;
     }
@@ -40,7 +41,7 @@ public class adaptersubjectstudent extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = LayoutInflater.from(context.getActivity());
         convertView = inflater.inflate(R.layout.listsubjectstudent, null);
         TextView TextViewSubjectTitle = (TextView)convertView.findViewById(R.id.TextViewSubjectStudentTitle);
         TextView TextViewCredit = (TextView)convertView.findViewById(R.id.TextViewCreditSubjectStudent);
