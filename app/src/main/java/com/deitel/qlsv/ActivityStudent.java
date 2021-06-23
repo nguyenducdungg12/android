@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.database.Cursor;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -67,6 +69,16 @@ public class ActivityStudent extends AppCompatActivity {
         adapterstudent = new adapterstudent(ActivityStudent.this,ArrayListStudent);
 
         listViewstudent.setAdapter(adapterstudent);
+        listViewstudent.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                int id_student=ArrayListStudent.get(position).getId_student();
+                Intent intent = new Intent(ActivityStudent.this, ActivityScore.class);
+                intent.putExtra("id_subjects",id_subject);
+                intent.putExtra("id_student",id_student);
+                startActivity(intent);
+            }
+        });
         cursor.moveToFirst();
         cursor.close();
     }

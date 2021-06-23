@@ -31,6 +31,7 @@ public class ActivitySubjectStudent extends AppCompatActivity {
         database = new database(this);
         VPAdapter vpAdapter = new VPAdapter(getSupportFragmentManager(), FragmentPagerAdapter.BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
         vpAdapter.addFragment(new FragmentSubjectStudent(), "MÔN HỌC ");
+        vpAdapter.addFragment(new FragmentScoreBoard(), "ĐIỂM SỐ ");
         Bundle bundle = new Bundle();
         Cursor cursor = database.getDataStudentthroughMSSV(MSSV);
         FragmentStudentInformation fragobj = new FragmentStudentInformation();

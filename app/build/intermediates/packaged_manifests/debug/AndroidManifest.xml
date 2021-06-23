@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.QLSV" >
+        <activity android:name="com.deitel.qlsv.ActivityScore" />
         <activity android:name="com.deitel.qlsv.ActivityShowAllStudent" />
         <activity
             android:name="com.deitel.qlsv.ActivityAllStudent"

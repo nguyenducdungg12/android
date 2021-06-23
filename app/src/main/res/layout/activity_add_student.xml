@@ -19,7 +19,7 @@
         android:textStyle="bold"></TextView>
 
     <EditText
-        android:id="@+id/EditTextStudentName"
+        android:id="@+id/EditTextScore"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_gravity="center"

@@ -28,7 +28,7 @@ public class ActivityAddStudent extends AppCompatActivity {
         buttonAddStudent = findViewById(R.id.buttonAddStudent);
         editTextDateofbirth = findViewById(R.id.EditTextStudentBirthday);
         editTextStudentCode = findViewById(R.id.EditTextStudentCode);
-        editTextStudentName = findViewById(R.id.EditTextStudentName);
+        editTextStudentName = findViewById(R.id.EditTextScore);
 
         radiobuttonFemale = findViewById(R.id.radiobuttonFeMale);
         radiobuttonMale = findViewById(R.id.radiobuttonMale);

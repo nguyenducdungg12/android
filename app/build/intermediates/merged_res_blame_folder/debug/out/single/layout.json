@@ -4,12 +4,20 @@
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_subject_student.xml"
     },
     {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_score.xml",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_score.xml"
+    },
+    {
         "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject.xml",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_subject.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student.xml",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listscoresubject.xml",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\listscoresubject.xml"
     },
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information_student.xml",
@@ -102,5 +110,9 @@
     {
         "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_student.xml",
         "source": "E:\\android-main\\app\\src\\main\\res\\layout\\activity_update_student.xml"
+    },
+    {
+        "merged": "E:\\android-main\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_score_board.xml",
+        "source": "E:\\android-main\\app\\src\\main\\res\\layout\\fragment_score_board.xml"
     }
 ]

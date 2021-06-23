@@ -17,11 +17,7 @@ import com.deitel.qlsv.models.Subject;
 
 import java.util.ArrayList;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link FragmentSubjectStudent#newInstance} factory method to
- * create an instance of this fragment.
- */
+
 public class FragmentSubjectStudent extends Fragment {
     ListView listViewSubjectStudent;
     ArrayList<Subject> ArrayListSubjectStudent;

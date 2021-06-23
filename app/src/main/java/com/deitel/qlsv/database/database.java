@@ -33,6 +33,7 @@ public class database extends SQLiteOpenHelper {
 
     //Bảng sinh viên môn học
     private static String TABLE_STUDENT_SUBJECTS = "studentsubject";
+    private static String STUDENT_SCORE ="studentscore";
 
     //Tạo bảng môn học
     private String SQLQuery = "CREATE TABLE "+ TABLE_SUBJECTS +" ( "+ID_SUBJECTS+" INTEGER PRIMARY KEY AUTOINCREMENT, "
@@ -51,7 +52,8 @@ public class database extends SQLiteOpenHelper {
     // Tạo bảng sinh viên môn học
     private String SQLQuery2 = "CREATE TABLE "+ TABLE_STUDENT_SUBJECTS +" ( "
             +ID_STUDENT+" INTEGER ,"
-            +ID_SUBJECTS+" INTEGER , " +
+            +ID_SUBJECTS+" INTEGER , "
+            +STUDENT_SCORE+" FLOAT , "+
             "FOREIGN KEY ( "+ ID_SUBJECTS +" ) REFERENCES "+ TABLE_SUBJECTS+"("+ID_SUBJECTS+"),"+
             "FOREIGN KEY ( "+ ID_STUDENT +" ) REFERENCES "+ TABLE_STUDENT+"("+ID_STUDENT+"),"+
             "PRIMARY KEY ("+ID_STUDENT+" , "+ID_SUBJECTS+"))";
@@ -144,13 +146,42 @@ public class database extends SQLiteOpenHelper {
         }
     }
 
+    public void AddScoreStudenttoSubject(int id_student,int id_subject,float score){
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(STUDENT_SCORE,score);
+        db.update(TABLE_STUDENT_SUBJECTS,values,ID_STUDENT+" = "+id_student+" AND "+ID_SUBJECTS+" = "+id_subject,null);
+    }
+
+    public Cursor getScoreStudent(int id_student,int id_subject){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =db.rawQuery("SELECT * FROM "+TABLE_STUDENT_SUBJECTS+
+                " WHERE "+ID_STUDENT+" = "+id_student+" AND "+ID_SUBJECTS+" = "+id_subject,null);
+        return res;
+    }
+
+    public Cursor getAllScoreStudent(String mssv){
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor res =db.rawQuery(
+                "SELECT "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+","
+                +TABLE_SUBJECTS+"."+ID_SUBJECTS+","
+                +TABLE_STUDENT_SUBJECTS+"."+STUDENT_SCORE+
+                " FROM "+TABLE_SUBJECTS +
+                " JOIN "+TABLE_STUDENT_SUBJECTS+
+                " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+
+                " JOIN "+TABLE_STUDENT+
+                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
+                " WHERE "+TABLE_STUDENT+"."+STUDENT_CODE+ " = ?" ,new String[]{mssv});
+        return res;
+    }
+
 // Lấy tất cả sinh viên thuộc môn học đó
     public Cursor getDataStudent(int id_subject){
         SQLiteDatabase db = this.getReadableDatabase();
         Cursor res =db.rawQuery(
                 "SELECT * FROM "+TABLE_STUDENT+
                 " JOIN "+TABLE_STUDENT_SUBJECTS+
-                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT+"."+ID_STUDENT+
+                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
                 " WHERE "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+" = "+id_subject,null);
         return res;
     }

@@ -23,7 +23,7 @@ public final class ListsubjectBinding implements ViewBinding {
   public final TextView TextViewCredit;
 
   @NonNull
-  public final TextView TextViewSubjectTitle;
+  public final TextView TextViewIdSubject;
 
   @NonNull
   public final ImageButton subjectdelete;
@@ -35,11 +35,11 @@ public final class ListsubjectBinding implements ViewBinding {
   public final ImageButton subjectupdate;
 
   private ListsubjectBinding(@NonNull LinearLayout rootView, @NonNull TextView TextViewCredit,
-      @NonNull TextView TextViewSubjectTitle, @NonNull ImageButton subjectdelete,
+      @NonNull TextView TextViewIdSubject, @NonNull ImageButton subjectdelete,
       @NonNull ImageButton subjectinformation, @NonNull ImageButton subjectupdate) {
     this.rootView = rootView;
     this.TextViewCredit = TextViewCredit;
-    this.TextViewSubjectTitle = TextViewSubjectTitle;
+    this.TextViewIdSubject = TextViewIdSubject;
     this.subjectdelete = subjectdelete;
     this.subjectinformation = subjectinformation;
     this.subjectupdate = subjectupdate;
@@ -78,9 +78,9 @@ public final class ListsubjectBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TextViewSubjectTitle;
-      TextView TextViewSubjectTitle = rootView.findViewById(id);
-      if (TextViewSubjectTitle == null) {
+      id = R.id.TextViewIdSubject;
+      TextView TextViewIdSubject = rootView.findViewById(id);
+      if (TextViewIdSubject == null) {
         break missingId;
       }
 
@@ -102,7 +102,7 @@ public final class ListsubjectBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ListsubjectBinding((LinearLayout) rootView, TextViewCredit, TextViewSubjectTitle,
+      return new ListsubjectBinding((LinearLayout) rootView, TextViewCredit, TextViewIdSubject,
           subjectdelete, subjectinformation, subjectupdate);
     }
     String missingId = rootView.getResources().getResourceName(id);

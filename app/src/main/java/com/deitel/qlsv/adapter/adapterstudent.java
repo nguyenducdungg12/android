@@ -8,7 +8,6 @@ import android.widget.BaseAdapter;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.deitel.qlsv.ActivityShowAllStudent;
 import com.deitel.qlsv.ActivityStudent;
 import com.deitel.qlsv.R;
 import com.deitel.qlsv.models.Student;
@@ -46,7 +45,7 @@ public class adapterstudent extends BaseAdapter {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(R.layout.liststudent,null);
 
-        TextView txtName = convertView.findViewById(R.id.TextViewStudentName);
+        TextView txtName = convertView.findViewById(R.id.TextViewSubjects);
         TextView txtCode = convertView.findViewById(R.id.TextViewStudentCode);
 
         ImageButton imgbtnDelete = convertView.findViewById(R.id.studentdelete);

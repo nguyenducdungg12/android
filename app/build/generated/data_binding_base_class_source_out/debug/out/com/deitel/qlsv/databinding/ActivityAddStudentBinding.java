@@ -21,13 +21,13 @@ public final class ActivityAddStudentBinding implements ViewBinding {
   private final LinearLayout rootView;
 
   @NonNull
+  public final EditText EditTextScore;
+
+  @NonNull
   public final EditText EditTextStudentBirthday;
 
   @NonNull
   public final EditText EditTextStudentCode;
-
-  @NonNull
-  public final EditText EditTextStudentName;
 
   @NonNull
   public final Button buttonAddStudent;
@@ -38,14 +38,14 @@ public final class ActivityAddStudentBinding implements ViewBinding {
   @NonNull
   public final RadioButton radiobuttonMale;
 
-  private ActivityAddStudentBinding(@NonNull LinearLayout rootView,
+  private ActivityAddStudentBinding(@NonNull LinearLayout rootView, @NonNull EditText EditTextScore,
       @NonNull EditText EditTextStudentBirthday, @NonNull EditText EditTextStudentCode,
-      @NonNull EditText EditTextStudentName, @NonNull Button buttonAddStudent,
-      @NonNull RadioButton radiobuttonFeMale, @NonNull RadioButton radiobuttonMale) {
+      @NonNull Button buttonAddStudent, @NonNull RadioButton radiobuttonFeMale,
+      @NonNull RadioButton radiobuttonMale) {
     this.rootView = rootView;
+    this.EditTextScore = EditTextScore;
     this.EditTextStudentBirthday = EditTextStudentBirthday;
     this.EditTextStudentCode = EditTextStudentCode;
-    this.EditTextStudentName = EditTextStudentName;
     this.buttonAddStudent = buttonAddStudent;
     this.radiobuttonFeMale = radiobuttonFeMale;
     this.radiobuttonMale = radiobuttonMale;
@@ -78,6 +78,12 @@ public final class ActivityAddStudentBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.EditTextScore;
+      EditText EditTextScore = rootView.findViewById(id);
+      if (EditTextScore == null) {
+        break missingId;
+      }
+
       id = R.id.EditTextStudentBirthday;
       EditText EditTextStudentBirthday = rootView.findViewById(id);
       if (EditTextStudentBirthday == null) {
@@ -87,12 +93,6 @@ public final class ActivityAddStudentBinding implements ViewBinding {
       id = R.id.EditTextStudentCode;
       EditText EditTextStudentCode = rootView.findViewById(id);
       if (EditTextStudentCode == null) {
-        break missingId;
-      }
-
-      id = R.id.EditTextStudentName;
-      EditText EditTextStudentName = rootView.findViewById(id);
-      if (EditTextStudentName == null) {
         break missingId;
       }
 
@@ -114,8 +114,8 @@ public final class ActivityAddStudentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityAddStudentBinding((LinearLayout) rootView, EditTextStudentBirthday,
-          EditTextStudentCode, EditTextStudentName, buttonAddStudent, radiobuttonFeMale,
+      return new ActivityAddStudentBinding((LinearLayout) rootView, EditTextScore,
+          EditTextStudentBirthday, EditTextStudentCode, buttonAddStudent, radiobuttonFeMale,
           radiobuttonMale);
     }
     String missingId = rootView.getResources().getResourceName(id);

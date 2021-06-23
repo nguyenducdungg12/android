@@ -23,7 +23,7 @@ public final class ListstudentBinding implements ViewBinding {
   public final TextView TextViewStudentCode;
 
   @NonNull
-  public final TextView TextViewStudentName;
+  public final TextView TextViewSubjects;
 
   @NonNull
   public final ImageButton studentdelete;
@@ -35,11 +35,11 @@ public final class ListstudentBinding implements ViewBinding {
   public final ImageButton studentupdate;
 
   private ListstudentBinding(@NonNull LinearLayout rootView, @NonNull TextView TextViewStudentCode,
-      @NonNull TextView TextViewStudentName, @NonNull ImageButton studentdelete,
+      @NonNull TextView TextViewSubjects, @NonNull ImageButton studentdelete,
       @NonNull ImageButton studentinformation, @NonNull ImageButton studentupdate) {
     this.rootView = rootView;
     this.TextViewStudentCode = TextViewStudentCode;
-    this.TextViewStudentName = TextViewStudentName;
+    this.TextViewSubjects = TextViewSubjects;
     this.studentdelete = studentdelete;
     this.studentinformation = studentinformation;
     this.studentupdate = studentupdate;
@@ -78,9 +78,9 @@ public final class ListstudentBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.TextViewStudentName;
-      TextView TextViewStudentName = rootView.findViewById(id);
-      if (TextViewStudentName == null) {
+      id = R.id.TextViewSubjects;
+      TextView TextViewSubjects = rootView.findViewById(id);
+      if (TextViewSubjects == null) {
         break missingId;
       }
 
@@ -102,8 +102,8 @@ public final class ListstudentBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ListstudentBinding((LinearLayout) rootView, TextViewStudentCode,
-          TextViewStudentName, studentdelete, studentinformation, studentupdate);
+      return new ListstudentBinding((LinearLayout) rootView, TextViewStudentCode, TextViewSubjects,
+          studentdelete, studentinformation, studentupdate);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

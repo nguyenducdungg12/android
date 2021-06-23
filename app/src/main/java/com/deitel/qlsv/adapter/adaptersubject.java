@@ -1,7 +1,6 @@
 package com.deitel.qlsv.adapter;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,7 +42,7 @@ public class adaptersubject extends BaseAdapter {
     public View getView(int position, View convertView, ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(R.layout.listsubject, null);
-        TextView TextViewSubjectTitle = (TextView)convertView.findViewById(R.id.TextViewSubjectTitle);
+        TextView TextViewSubjectTitle = (TextView)convertView.findViewById(R.id.TextViewIdSubject);
         TextView TextViewCredit = (TextView)convertView.findViewById(R.id.TextViewCredit);
         ImageButton imageDelete = (ImageButton)convertView.findViewById(R.id.subjectdelete);
         ImageButton imageInformation = (ImageButton)convertView.findViewById(R.id.subjectinformation);

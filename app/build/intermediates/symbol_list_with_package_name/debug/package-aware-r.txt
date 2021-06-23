@@ -1737,11 +1737,11 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id EditTextScore
 id EditTextStudentBirthday
 id EditTextStudentBirthdayUpdate
 id EditTextStudentCode
 id EditTextStudentCodeUpdate
-id EditTextStudentName
 id EditTextStudentNameUpdate
 id EditTextSubjectCredit
 id EditTextSubjectPlace
@@ -1765,10 +1765,10 @@ id TOP_END
 id TOP_START
 id TextViewCredit
 id TextViewCreditSubjectStudent
+id TextViewIdSubject
 id TextViewStudentCode
-id TextViewStudentName
 id TextViewSubjectStudentTitle
-id TextViewSubjectTitle
+id TextViewSubjects
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -1852,6 +1852,7 @@ id btnlogin
 id btnlogoutadmin
 id btnlogoutstudent
 id btnquit
+id buttonAddScore
 id buttonAddStudent
 id buttonAddSubject
 id buttonNo
@@ -1998,6 +1999,7 @@ id listMode
 id list_item
 id listviewSubject
 id listviewSubjectStudent
+id listviewSubjectStudentScore
 id listviewsAllstudent
 id listviewsstudent
 id listviewsstudentAll
@@ -2197,6 +2199,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id textView3
 id textView4
 id textView5
@@ -2230,8 +2233,11 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtScoreSubject
+id txtScoreSubjectfake
 id txtStudentCode
 id txtStudentName
+id txtStudentScore
 id txtStudentSex
 id txtStudentdateofbirth
 id txtSubjectCredit
@@ -2321,6 +2327,7 @@ layout activity_add_subject
 layout activity_admin
 layout activity_information_student
 layout activity_login
+layout activity_score
 layout activity_show_all_student
 layout activity_student
 layout activity_subject
@@ -2351,8 +2358,10 @@ layout dialogdeletestudent
 layout dialogexit
 layout dialogupdatestudent
 layout dialogupdatesubject
+layout fragment_score_board
 layout fragment_student_information
 layout fragment_subject_student
+layout listscoresubject
 layout liststudent
 layout liststudentsubject
 layout listsubject
