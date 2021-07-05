@@ -6,10 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ActivityAdmin extends AppCompatActivity {
     Button btnlistsubjectadmin,btnaddstudentadmin,btnliststudentsubject,btnlogoutadmin;
-
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,5 +47,19 @@ public class ActivityAdmin extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        count++;
+        if(count==1){
+            Toast.makeText(getApplicationContext(), " Nhấn lần để thoát ứng dụng ", Toast.LENGTH_SHORT).show();
+        }
+        else if(count >1){
+            Intent intent = new Intent(ActivityAdmin.this,ActivityAdmin.class);
+            startActivity(intent);
+            Intent intent1= new Intent(Intent.ACTION_MAIN);
+            intent1.addCategory(Intent.CATEGORY_HOME);
+            startActivity(intent1);
+        }
     }
 }

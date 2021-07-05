@@ -26,14 +26,18 @@ public final class ListsubjectstudentBinding implements ViewBinding {
   public final TextView TextViewSubjectStudentTitle;
 
   @NonNull
+  public final TextView mamh;
+
+  @NonNull
   public final ImageButton subjectstudentinformation;
 
   private ListsubjectstudentBinding(@NonNull LinearLayout rootView,
       @NonNull TextView TextViewCreditSubjectStudent, @NonNull TextView TextViewSubjectStudentTitle,
-      @NonNull ImageButton subjectstudentinformation) {
+      @NonNull TextView mamh, @NonNull ImageButton subjectstudentinformation) {
     this.rootView = rootView;
     this.TextViewCreditSubjectStudent = TextViewCreditSubjectStudent;
     this.TextViewSubjectStudentTitle = TextViewSubjectStudentTitle;
+    this.mamh = mamh;
     this.subjectstudentinformation = subjectstudentinformation;
   }
 
@@ -76,6 +80,12 @@ public final class ListsubjectstudentBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.mamh;
+      TextView mamh = rootView.findViewById(id);
+      if (mamh == null) {
+        break missingId;
+      }
+
       id = R.id.subjectstudentinformation;
       ImageButton subjectstudentinformation = rootView.findViewById(id);
       if (subjectstudentinformation == null) {
@@ -83,7 +93,7 @@ public final class ListsubjectstudentBinding implements ViewBinding {
       }
 
       return new ListsubjectstudentBinding((LinearLayout) rootView, TextViewCreditSubjectStudent,
-          TextViewSubjectStudentTitle, subjectstudentinformation);
+          TextViewSubjectStudentTitle, mamh, subjectstudentinformation);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

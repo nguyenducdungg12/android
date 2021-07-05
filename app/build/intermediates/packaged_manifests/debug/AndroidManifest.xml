@@ -21,13 +21,8 @@
         android:theme="@style/Theme.QLSV" >
         <activity android:name="com.deitel.qlsv.ActivityScore" />
         <activity android:name="com.deitel.qlsv.ActivityShowAllStudent" />
-        <activity
-            android:name="com.deitel.qlsv.ActivityAllStudent"
-            android:label="@string/title_activity_all_student"
-            android:theme="@style/Theme.QLSV.NoActionBar" />
         <activity android:name="com.deitel.qlsv.ActivityAddStudenttoSubject" />
         <activity android:name="com.deitel.qlsv.ActivityAdmin" />
-        <activity android:name="com.deitel.qlsv.models.ActivityAdmin" />
         <activity android:name="com.deitel.qlsv.ActivityLogin" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

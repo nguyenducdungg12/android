@@ -45,10 +45,13 @@ public class adaptersubjectstudent extends BaseAdapter {
         convertView = inflater.inflate(R.layout.listsubjectstudent, null);
         TextView TextViewSubjectTitle = (TextView)convertView.findViewById(R.id.TextViewSubjectStudentTitle);
         TextView TextViewCredit = (TextView)convertView.findViewById(R.id.TextViewCreditSubjectStudent);
+        TextView mamh = (TextView)convertView.findViewById(R.id.mamh);
         ImageButton imageInformation = (ImageButton)convertView.findViewById(R.id.subjectstudentinformation);
         Subject subject = ArrayListSubject.get(position);
         TextViewCredit.setText(subject.getNumber_of_credit()+"");
         TextViewSubjectTitle.setText(subject.getSubject_title());
+        mamh.setText(subject.getId()+"");
+
         int id = subject.getId();
         imageInformation.setOnClickListener(new View.OnClickListener() {
             @Override

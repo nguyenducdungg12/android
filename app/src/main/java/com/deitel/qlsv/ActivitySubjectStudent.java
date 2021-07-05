@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.Toast;
 
 import com.deitel.qlsv.adapter.VPAdapter;
 import com.deitel.qlsv.database.database;
@@ -18,7 +19,7 @@ public class ActivitySubjectStudent extends AppCompatActivity {
     private ViewPager viewPager;
     database database;
     String MSSV;
-
+    int count=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,26 +50,16 @@ public class ActivitySubjectStudent extends AppCompatActivity {
         }
         vpAdapter.addFragment(fragobj, "HỒ SƠ");
         viewPager.setAdapter(vpAdapter);
-        viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-
-            }
-
-            @Override
-            public void onPageSelected(int position) {
-                if (position == 0) {
-
-                }
-                if (position == 1) {
-
-                }
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state) {
-
-            }
-        });
+    }
+    public void onBackPressed(){
+        count++;
+        if(count==1){
+            Toast.makeText(getApplicationContext(), " Nhấn lần để thoát ứng dụng ", Toast.LENGTH_SHORT).show();
+        }
+        else if(count >1){
+            Intent intent1= new Intent(Intent.ACTION_MAIN);
+            intent1.addCategory(Intent.CATEGORY_HOME);
+            startActivity(intent1);
+        }
     }
 }

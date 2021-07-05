@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 #Mon Jul 05 15:44:36 ICT 2021
 base.0=D\:\\android1\\android\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+=======
+#Sat Jun 26 22:25:29 ICT 2021
+base.1=E\:\\android-main\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+>>>>>>> e6e038fbb307fd66cb68213de5f61ca942ea1c25
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
