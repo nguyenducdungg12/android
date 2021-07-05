@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -26,24 +27,28 @@ public final class ActivityAddSubjectBinding implements ViewBinding {
   public final EditText EditTextSubjectPlace;
 
   @NonNull
-  public final EditText EditTextSubjectTime;
-
-  @NonNull
   public final EditText EditTextSubjectTitle;
 
   @NonNull
   public final Button buttonAddSubject;
 
+  @NonNull
+  public final Spinner spinnerDay;
+
+  @NonNull
+  public final Spinner spinnerTime;
+
   private ActivityAddSubjectBinding(@NonNull LinearLayout rootView,
       @NonNull EditText EditTextSubjectCredit, @NonNull EditText EditTextSubjectPlace,
-      @NonNull EditText EditTextSubjectTime, @NonNull EditText EditTextSubjectTitle,
-      @NonNull Button buttonAddSubject) {
+      @NonNull EditText EditTextSubjectTitle, @NonNull Button buttonAddSubject,
+      @NonNull Spinner spinnerDay, @NonNull Spinner spinnerTime) {
     this.rootView = rootView;
     this.EditTextSubjectCredit = EditTextSubjectCredit;
     this.EditTextSubjectPlace = EditTextSubjectPlace;
-    this.EditTextSubjectTime = EditTextSubjectTime;
     this.EditTextSubjectTitle = EditTextSubjectTitle;
     this.buttonAddSubject = buttonAddSubject;
+    this.spinnerDay = spinnerDay;
+    this.spinnerTime = spinnerTime;
   }
 
   @Override
@@ -85,12 +90,6 @@ public final class ActivityAddSubjectBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.EditTextSubjectTime;
-      EditText EditTextSubjectTime = rootView.findViewById(id);
-      if (EditTextSubjectTime == null) {
-        break missingId;
-      }
-
       id = R.id.EditTextSubjectTitle;
       EditText EditTextSubjectTitle = rootView.findViewById(id);
       if (EditTextSubjectTitle == null) {
@@ -103,8 +102,20 @@ public final class ActivityAddSubjectBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.spinnerDay;
+      Spinner spinnerDay = rootView.findViewById(id);
+      if (spinnerDay == null) {
+        break missingId;
+      }
+
+      id = R.id.spinnerTime;
+      Spinner spinnerTime = rootView.findViewById(id);
+      if (spinnerTime == null) {
+        break missingId;
+      }
+
       return new ActivityAddSubjectBinding((LinearLayout) rootView, EditTextSubjectCredit,
-          EditTextSubjectPlace, EditTextSubjectTime, EditTextSubjectTitle, buttonAddSubject);
+          EditTextSubjectPlace, EditTextSubjectTitle, buttonAddSubject, spinnerDay, spinnerTime);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

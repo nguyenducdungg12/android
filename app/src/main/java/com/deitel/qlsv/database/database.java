@@ -20,6 +20,7 @@ public class database extends SQLiteOpenHelper {
     private static String SUBJECT_TITLE = "subjecttitle";
     private static String CREDITS = "credits";
     private static String TIME = "time";
+    private static String DAY = "day";
     private static String PLACE = "place";
     private static int VERSION = 1;
 
@@ -40,7 +41,9 @@ public class database extends SQLiteOpenHelper {
             +SUBJECT_TITLE+" TEXT, "
             +CREDITS+" INTEGER, "
             +TIME+" TEXT, "
-            + PLACE+" TEXT) ";
+            +PLACE+" TEXT,"
+            +DAY + " TEXT"+
+        ") ";
 
     //Tạo bảng sinh viên
     private String SQLQuery1 = "CREATE TABLE "+ TABLE_STUDENT +" ( "+ID_STUDENT+" integer primary key AUTOINCREMENT, "
@@ -80,8 +83,48 @@ public class database extends SQLiteOpenHelper {
         values.put(CREDITS,subject.getNumber_of_credit());
         values.put(TIME,subject.getTime());
         values.put(PLACE,subject.getPlace());
+        values.put(DAY,subject.getDay());
         db.insert(TABLE_SUBJECTS,null,values);
         db.close();
+    }
+    public boolean checkSubjectStudent(int id_student,int id_subject){
+        SQLiteDatabase db= this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM "+TABLE_SUBJECTS
+                        +" WHERE "
+                        +TIME+" IN (SELECT "+TABLE_SUBJECTS+"."+TIME+
+                        " FROM "+TABLE_SUBJECTS +
+                        " JOIN "+TABLE_STUDENT_SUBJECTS+
+                        " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+
+                        " JOIN "+TABLE_STUDENT+
+                        " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
+                        " WHERE "+TABLE_STUDENT+"."+ID_STUDENT+ " = "+id_student+") "+" AND "
+                        +DAY+" IN (SELECT "+TABLE_SUBJECTS+"."+DAY+
+                        " FROM "+TABLE_SUBJECTS +
+                        " JOIN "+TABLE_STUDENT_SUBJECTS+
+                        " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+
+                        " JOIN "+TABLE_STUDENT+
+                        " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
+                        " WHERE "+TABLE_STUDENT+"."+ID_STUDENT+ " = "+id_student+")"
+                ,null);
+        if(cursor.getCount()>0)
+            return false;
+        return true;
+
+    }
+
+    public Cursor getDataSubjectWithDay(String day,String mssv){
+        SQLiteDatabase db= this.getReadableDatabase();
+        Cursor cursor = db.rawQuery(
+        "SELECT "+TABLE_SUBJECTS+"."+SUBJECT_TITLE+","
+                +TABLE_SUBJECTS+"."+DAY+","
+                +TABLE_SUBJECTS+"."+TIME+
+                " FROM "+TABLE_SUBJECTS +
+                " JOIN "+TABLE_STUDENT_SUBJECTS+
+                " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+
+                " JOIN "+TABLE_STUDENT+
+                " ON "+TABLE_STUDENT+"."+ID_STUDENT+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_STUDENT+
+                " WHERE "+TABLE_STUDENT+"."+STUDENT_CODE+ " = ?" +" AND "+TABLE_SUBJECTS+"."+DAY+ " = ?",new String[]{mssv,day});
+        return cursor;
     }
     public boolean UpdateSubject(Subject subject,int id) {
         SQLiteDatabase db = this.getWritableDatabase();
@@ -91,6 +134,7 @@ public class database extends SQLiteOpenHelper {
         values.put(CREDITS,subject.getNumber_of_credit());
         values.put(TIME,subject.getTime());
         values.put(PLACE,subject.getPlace());
+        values.put(DAY,subject.getDay());
         db.update(TABLE_SUBJECTS,values,ID_SUBJECTS+" = "+id,null);
         return true;
     }
@@ -145,6 +189,7 @@ public class database extends SQLiteOpenHelper {
             return true;
         }
     }
+
 
     public void AddScoreStudenttoSubject(int id_student,int id_subject,float score){
         SQLiteDatabase db = this.getWritableDatabase();
@@ -223,7 +268,8 @@ public class database extends SQLiteOpenHelper {
                 +TABLE_SUBJECTS+"."+SUBJECT_TITLE+","
                 +TABLE_SUBJECTS+"."+CREDITS+","
                 +TABLE_SUBJECTS+"."+TIME+","
-                +TABLE_SUBJECTS+"."+PLACE+
+                +TABLE_SUBJECTS+"."+PLACE+","
+                 +TABLE_SUBJECTS + "."+DAY+
                 " FROM "+TABLE_SUBJECTS +
                 " JOIN "+TABLE_STUDENT_SUBJECTS+
                 " ON "+TABLE_SUBJECTS+"."+ID_SUBJECTS+" = "+TABLE_STUDENT_SUBJECTS+"."+ID_SUBJECTS+

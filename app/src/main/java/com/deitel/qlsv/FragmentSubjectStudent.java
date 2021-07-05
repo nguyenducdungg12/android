@@ -45,7 +45,8 @@ public class FragmentSubjectStudent extends Fragment {
             int credit = cursor.getInt(2);
             String time = cursor.getString(3);
             String place = cursor.getString(4);
-            ArrayListSubjectStudent.add(new Subject(id,title,credit,time,place));
+            String day = cursor.getString(5);
+            ArrayListSubjectStudent.add(new Subject(id,title,credit,time,place,day));
         }
 
         adaptersubjectstudent = new adaptersubjectstudent(this,ArrayListSubjectStudent);

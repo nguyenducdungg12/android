@@ -12,21 +12,6 @@ public class Subject {
 //    Địa điểm
     private String place;
 
-    public Subject(String subject_title, int number_of_credit, String time, String place) {
-        this.subject_title = subject_title;
-        this.number_of_credit = number_of_credit;
-        this.time = time;
-        this.place = place;
-    }
-
-    public Subject(int id, String subject_title, int number_of_credit, String time, String place) {
-        this.id = id;
-        this.subject_title = subject_title;
-        this.number_of_credit = number_of_credit;
-        this.time = time;
-        this.place = place;
-    }
-
     public int getId() {
         return id;
     }
@@ -55,6 +40,12 @@ public class Subject {
         return time;
     }
 
+    public Subject(String subject_title, String day,String time) {
+        this.subject_title = subject_title;
+        this.day = day;
+        this.time = time;
+    }
+
     public void setTime(String time) {
         this.time = time;
     }
@@ -67,4 +58,31 @@ public class Subject {
         this.place = place;
     }
 
+    public String getDay() {
+        return day;
+    }
+
+    public void setDay(String day) {
+        this.day = day;
+    }
+
+    public Subject(String subject_title, int number_of_credit, String time, String place, String day) {
+        this.subject_title = subject_title;
+        this.number_of_credit = number_of_credit;
+        this.time = time;
+        this.place = place;
+        this.day = day;
+    }
+
+    // Thứ
+    private String day;
+
+    public Subject(int id, String subject_title, int number_of_credit, String time, String place, String day) {
+        this.id = id;
+        this.subject_title = subject_title;
+        this.number_of_credit = number_of_credit;
+        this.time = time;
+        this.place = place;
+        this.day = day;
+    }
 }

@@ -63,15 +63,25 @@ public class ActivityAddStudenttoSubject extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int id_student=ArrayListStudent.get(position).getId_student();
-                boolean value=database.AddStudentToSubject(id_student,id_subject);
-                if(value==true) {
-                    Toast.makeText(ActivityAddStudenttoSubject.this, "Thêm sinh viên thành công", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(ActivityAddStudenttoSubject.this, ActivityStudent.class);
-                    intent.putExtra("id_subject",id_subject);
-                    startActivity(intent);
+                boolean check = database.checkSubjectStudent(id_student,id_subject);
+
+                if(check){
+                    boolean value=database.AddStudentToSubject(id_student,id_subject);
+                    if(value==true) {
+                        Toast.makeText(ActivityAddStudenttoSubject.this, "Thêm sinh viên thành công", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(ActivityAddStudenttoSubject.this, ActivityStudent.class);
+                        intent.putExtra("id_subject",id_subject);
+                        startActivity(intent);
+                    }
+                    else{
+                        Toast.makeText(ActivityAddStudenttoSubject.this,"Sinh viên đã nằm trong môn học này",Toast.LENGTH_SHORT).show();
+                    }
                 }
-                else
-                    Toast.makeText(ActivityAddStudenttoSubject.this,"Sinh viên đã nằm trong môn học này",Toast.LENGTH_SHORT).show();
+                else{
+                    Toast.makeText(ActivityAddStudenttoSubject.this,"Môn học đã trùng giờ ",Toast.LENGTH_SHORT).show();
+
+                }
+
             }
         });
         cursor.moveToFirst();

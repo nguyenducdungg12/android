@@ -26,6 +26,9 @@ public final class ActivitySubjectInformationBinding implements ViewBinding {
   public final TextView txtSubjectCredit;
 
   @NonNull
+  public final TextView txtSubjectDay;
+
+  @NonNull
   public final TextView txtSubjectPlace;
 
   @NonNull
@@ -36,11 +39,12 @@ public final class ActivitySubjectInformationBinding implements ViewBinding {
 
   private ActivitySubjectInformationBinding(@NonNull LinearLayout rootView,
       @NonNull ImageView imageView4, @NonNull TextView txtSubjectCredit,
-      @NonNull TextView txtSubjectPlace, @NonNull TextView txtSubjectTime,
-      @NonNull TextView txtSubjectTitle) {
+      @NonNull TextView txtSubjectDay, @NonNull TextView txtSubjectPlace,
+      @NonNull TextView txtSubjectTime, @NonNull TextView txtSubjectTitle) {
     this.rootView = rootView;
     this.imageView4 = imageView4;
     this.txtSubjectCredit = txtSubjectCredit;
+    this.txtSubjectDay = txtSubjectDay;
     this.txtSubjectPlace = txtSubjectPlace;
     this.txtSubjectTime = txtSubjectTime;
     this.txtSubjectTitle = txtSubjectTitle;
@@ -85,6 +89,12 @@ public final class ActivitySubjectInformationBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.txtSubjectDay;
+      TextView txtSubjectDay = rootView.findViewById(id);
+      if (txtSubjectDay == null) {
+        break missingId;
+      }
+
       id = R.id.txtSubjectPlace;
       TextView txtSubjectPlace = rootView.findViewById(id);
       if (txtSubjectPlace == null) {
@@ -104,7 +114,7 @@ public final class ActivitySubjectInformationBinding implements ViewBinding {
       }
 
       return new ActivitySubjectInformationBinding((LinearLayout) rootView, imageView4,
-          txtSubjectCredit, txtSubjectPlace, txtSubjectTime, txtSubjectTitle);
+          txtSubjectCredit, txtSubjectDay, txtSubjectPlace, txtSubjectTime, txtSubjectTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

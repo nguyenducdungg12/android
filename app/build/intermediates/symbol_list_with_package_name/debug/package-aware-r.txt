@@ -265,6 +265,7 @@ attr colorSecondary
 attr colorSecondaryVariant
 attr colorSurface
 attr colorSwitchThumbNormal
+attr columnGap
 attr commitIcon
 attr constraintSet
 attr constraintSetEnd
@@ -322,7 +323,9 @@ attr customPixelDimension
 attr customStringValue
 attr data
 attr dataPattern
+attr dayBackgroundColor
 attr dayInvalidStyle
+attr dayNameLength
 attr daySelectedStyle
 attr dayStyle
 attr dayTodayStyle
@@ -383,6 +386,11 @@ attr errorIconTint
 attr errorIconTintMode
 attr errorTextAppearance
 attr errorTextColor
+attr eventCornerRadius
+attr eventMarginVertical
+attr eventPadding
+attr eventTextColor
+attr eventTextSize
 attr exitAnim
 attr expandActivityOverflowButtonDrawable
 attr expanded
@@ -409,6 +417,7 @@ attr fastScrollHorizontalTrackDrawable
 attr fastScrollVerticalThumbDrawable
 attr fastScrollVerticalTrackDrawable
 attr firstBaselineToTopHeight
+attr firstDayOfWeek
 attr floatingActionButtonStyle
 attr flow_firstHorizontalBias
 attr flow_firstHorizontalStyle
@@ -443,13 +452,20 @@ attr fontVariationSettings
 attr fontWeight
 attr foregroundInsidePadding
 attr framePosition
+attr futureBackgroundColor
+attr futureWeekendBackgroundColor
 attr gapBetweenBars
 attr gestureInsetBottomIgnored
 attr goIcon
 attr graph
 attr haloColor
 attr haloRadius
+attr headerColumnBackground
+attr headerColumnPadding
+attr headerColumnTextColor
 attr headerLayout
+attr headerRowBackgroundColor
+attr headerRowPadding
 attr height
 attr helperText
 attr helperTextEnabled
@@ -465,7 +481,11 @@ attr hintTextAppearance
 attr hintTextColor
 attr homeAsUpIndicator
 attr homeLayout
+attr horizontalFlingEnabled
 attr horizontalOffset
+attr hourHeight
+attr hourSeparatorColor
+attr hourSeparatorHeight
 attr hoveredFocusedTranslationZ
 attr icon
 attr iconEndPadding
@@ -641,6 +661,7 @@ attr maxActionInlineWidth
 attr maxButtonHeight
 attr maxCharacterCount
 attr maxHeight
+attr maxHourHeight
 attr maxImageSize
 attr maxLines
 attr maxVelocity
@@ -650,6 +671,7 @@ attr menu
 attr mimeType
 attr minHeight
 attr minHideDelay
+attr minHourHeight
 attr minSeparation
 attr minTouchTargetSize
 attr minWidth
@@ -677,6 +699,9 @@ attr navigationMode
 attr navigationViewStyle
 attr nestedScrollFlags
 attr nestedScrollable
+attr noOfVisibleDays
+attr nowLineColor
+attr nowLineThickness
 attr nullable
 attr number
 attr numericModifiers
@@ -687,6 +712,7 @@ attr onPositiveCross
 attr onShow
 attr onTouchUp
 attr overlapAnchor
+attr overlappingEventGap
 attr overlay
 attr paddingBottomNoButtons
 attr paddingBottomSystemWindowInsets
@@ -703,6 +729,8 @@ attr passwordToggleDrawable
 attr passwordToggleEnabled
 attr passwordToggleTint
 attr passwordToggleTintMode
+attr pastBackgroundColor
+attr pastWeekendBackgroundColor
 attr pathMotionArc
 attr path_percent
 attr percentHeight
@@ -766,8 +794,11 @@ attr shapeAppearanceSmallComponent
 attr showAnimationBehavior
 attr showAsAction
 attr showDelay
+attr showDistinctPastFutureColor
+attr showDistinctWeekendColor
 attr showDividers
 attr showMotionSpec
+attr showNowLine
 attr showPaths
 attr showText
 attr showTitle
@@ -880,6 +911,7 @@ attr textEndPadding
 attr textInputLayoutFocusedRectEnabled
 attr textInputStyle
 attr textLocale
+attr textSize
 attr textStartPadding
 attr theme
 attr themeLineHeight
@@ -912,6 +944,8 @@ attr titleMargins
 attr titleTextAppearance
 attr titleTextColor
 attr titleTextStyle
+attr todayBackgroundColor
+attr todayHeaderTextColor
 attr toolbarId
 attr toolbarNavigationButtonStyle
 attr toolbarStyle
@@ -944,6 +978,7 @@ attr uri
 attr useCompatPadding
 attr useMaterialThemeColors
 attr values
+attr verticalFlingEnabled
 attr verticalOffset
 attr viewInflaterClass
 attr visibilityMode
@@ -964,6 +999,7 @@ attr windowFixedWidthMinor
 attr windowMinWidthMajor
 attr windowMinWidthMinor
 attr windowNoTitle
+attr xScrollingSpeed
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
@@ -1729,6 +1765,7 @@ drawable outline_account_circle_24
 drawable profilesv
 drawable subject
 drawable test_custom_background
+drawable timetable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable truongdh
@@ -1745,11 +1782,9 @@ id EditTextStudentCodeUpdate
 id EditTextStudentNameUpdate
 id EditTextSubjectCredit
 id EditTextSubjectPlace
-id EditTextSubjectTime
 id EditTextSubjectTitle
 id EditTextUpdateSubjectCredit
 id EditTextUpdateSubjectPlace
-id EditTextUpdateSubjectTime
 id EditTextUpdateSubjectTitle
 id FUNCTION
 id FirstFragment
@@ -1763,6 +1798,7 @@ id SYM
 id SecondFragment
 id TOP_END
 id TOP_START
+id TextTimeSubjectTable
 id TextViewCredit
 id TextViewCreditSubjectStudent
 id TextViewIdSubject
@@ -1951,6 +1987,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id friday
 id ghost_view
 id ghost_view_holder
 id gone
@@ -1991,6 +2028,8 @@ id largeLabel
 id layout
 id left
 id leftToRight
+id length_long
+id length_short
 id line1
 id line3
 id linear
@@ -1999,6 +2038,12 @@ id listMode
 id list_item
 id listviewSubject
 id listviewSubjectStudent
+id listviewSubjectStudent2
+id listviewSubjectStudent3
+id listviewSubjectStudent4
+id listviewSubjectStudent5
+id listviewSubjectStudent6
+id listviewSubjectStudent7
 id listviewSubjectStudentScore
 id listviewsAllstudent
 id listviewsstudent
@@ -2032,6 +2077,7 @@ id menustudent
 id message
 id middle
 id mini
+id monday
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -2108,6 +2154,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id saturday
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2145,6 +2192,11 @@ id snap
 id snapMargins
 id spacer
 id special_effects_controller_view_tag
+id spinnerDay
+id spinnerDayItem
+id spinnerDayUpdate
+id spinnerTime
+id spinnerTimeUpdate
 id spline
 id split_action_bar
 id spread
@@ -2173,6 +2225,7 @@ id subjectstudentinformation
 id subjectupdate
 id submenuarrow
 id submit_area
+id sunday
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -2212,6 +2265,7 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id thursday
 id time
 id title
 id titleDividerNoCustom
@@ -2233,6 +2287,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tuesday
 id txtScoreSubject
 id txtScoreSubjectfake
 id txtStudentCode
@@ -2241,6 +2296,7 @@ id txtStudentScore
 id txtStudentSex
 id txtStudentdateofbirth
 id txtSubjectCredit
+id txtSubjectDay
 id txtSubjectPlace
 id txtSubjectTime
 id txtSubjectTitle
@@ -2255,6 +2311,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wednesday
 id withText
 id withinBounds
 id wrap
@@ -2361,11 +2418,13 @@ layout dialogupdatesubject
 layout fragment_score_board
 layout fragment_student_information
 layout fragment_subject_student
+layout fragment_timetable
 layout listscoresubject
 layout liststudent
 layout liststudentsubject
 layout listsubject
 layout listsubjectstudent
+layout listsubjecttable
 layout material_chip_input_combo
 layout material_clock_display
 layout material_clock_display_divider
@@ -2426,6 +2485,7 @@ layout notification_template_part_time
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout spinneritem
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -3427,6 +3487,7 @@ styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewPager2 android_orientation
 styleable ViewStubCompat android_id android_layout android_inflatedId
+styleable WeekView columnGap dayBackgroundColor dayNameLength eventCornerRadius eventMarginVertical eventPadding eventTextColor eventTextSize firstDayOfWeek futureBackgroundColor futureWeekendBackgroundColor headerColumnBackground headerColumnPadding headerColumnTextColor headerRowBackgroundColor headerRowPadding horizontalFlingEnabled hourHeight hourSeparatorColor hourSeparatorHeight maxHourHeight minHourHeight noOfVisibleDays nowLineColor nowLineThickness overlappingEventGap pastBackgroundColor pastWeekendBackgroundColor showDistinctPastFutureColor showDistinctWeekendColor showNowLine textSize todayBackgroundColor todayHeaderTextColor verticalFlingEnabled xScrollingSpeed
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
 xml standalone_badge_gravity_bottom_start

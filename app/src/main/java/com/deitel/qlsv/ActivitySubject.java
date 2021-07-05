@@ -50,7 +50,8 @@ public class ActivitySubject extends AppCompatActivity {
             int credit = cursor.getInt(2);
             String time = cursor.getString(3);
             String place = cursor.getString(4);
-            ArrayListSubject.add(new Subject(id,title,credit,time,place));
+            String day = cursor.getString(5);
+            ArrayListSubject.add(new Subject(id,title,credit,time,place,day));
         }
         adaptersubjects = new adaptersubject(ActivitySubject.this,ArrayListSubject);
         listViewSubject.setAdapter(adaptersubjects);
@@ -108,12 +109,12 @@ public class ActivitySubject extends AppCompatActivity {
                 int credit = cursor.getInt(2);
                 String time = cursor.getString(3);
                 String place = cursor.getString(4);
-
+                String day = cursor.getString(5);
                 intent.putExtra("title",title);
                 intent.putExtra("credit",credit);
                 intent.putExtra("time",time);
                 intent.putExtra("place",place);
-
+                intent.putExtra("day",day);
                 startActivity(intent);
             }
         }
@@ -158,11 +159,13 @@ public class ActivitySubject extends AppCompatActivity {
                 int credit = cursor.getInt(2);
                 String time = cursor.getString(3);
                 String place = cursor.getString(4);
+                String day = cursor.getString(5);
 
                 intent.putExtra("title",title);
                 intent.putExtra("credit",credit);
                 intent.putExtra("time",time);
                 intent.putExtra("place",place);
+                intent.putExtra("day",day);
 
                 startActivity(intent);
             }
