@@ -1,0 +1,165 @@
+com/deitel/qlsv/models/Student.java
+ com.deitel.qlsv.models.Student
+com/deitel/qlsv/ActivityInformationStudent.java
+ com.deitel.qlsv.ActivityInformationStudent
+com/deitel/qlsv/adapter/adaptersubjectstudent.java
+ com.deitel.qlsv.adapter.adaptersubjectstudent
+ com.deitel.qlsv.adapter.adaptersubjectstudent$1
+com/deitel/qlsv/databinding/ActivityAdminBinding.java
+ com.deitel.qlsv.databinding.ActivityAdminBinding
+com/deitel/qlsv/databinding/ListstudentBinding.java
+ com.deitel.qlsv.databinding.ListstudentBinding
+com/deitel/qlsv/FragmentTimetable.java
+ com.deitel.qlsv.FragmentTimetable
+com/deitel/qlsv/databinding/ActivityUpdateSubjectBinding.java
+ com.deitel.qlsv.databinding.ActivityUpdateSubjectBinding
+com/deitel/qlsv/database/database.java
+ com.deitel.qlsv.database.database
+com/deitel/qlsv/adapter/adaptertimettable.java
+ com.deitel.qlsv.adapter.adaptertimettable
+com/deitel/qlsv/databinding/ActivitySubjectInformationBinding.java
+ com.deitel.qlsv.databinding.ActivitySubjectInformationBinding
+com/deitel/qlsv/ActivityShowAllStudent.java
+ com.deitel.qlsv.ActivityShowAllStudent
+ com.deitel.qlsv.ActivityShowAllStudent$1
+ com.deitel.qlsv.ActivityShowAllStudent$2
+com/deitel/qlsv/ActivityAddStudenttoSubject.java
+ com.deitel.qlsv.ActivityAddStudenttoSubject
+ com.deitel.qlsv.ActivityAddStudenttoSubject$1
+com/deitel/qlsv/databinding/ActivityLoginBinding.java
+ com.deitel.qlsv.databinding.ActivityLoginBinding
+com/deitel/qlsv/databinding/DialogdeleteBinding.java
+ com.deitel.qlsv.databinding.DialogdeleteBinding
+com/deitel/qlsv/BuildConfig.java
+ com.deitel.qlsv.BuildConfig
+com/deitel/qlsv/ActivitySubject.java
+ com.deitel.qlsv.ActivitySubject
+ com.deitel.qlsv.ActivitySubject$1
+ com.deitel.qlsv.ActivitySubject$2
+ com.deitel.qlsv.ActivitySubject$3
+com/deitel/qlsv/ActivitySubjectInformation.java
+ com.deitel.qlsv.ActivitySubjectInformation
+com/deitel/qlsv/databinding/FragmentStudentInformationBinding.java
+ com.deitel.qlsv.databinding.FragmentStudentInformationBinding
+com/deitel/qlsv/databinding/DialogdeletestudentBinding.java
+ com.deitel.qlsv.databinding.DialogdeletestudentBinding
+com/deitel/qlsv/databinding/ActivitySubjectBinding.java
+ com.deitel.qlsv.databinding.ActivitySubjectBinding
+com/deitel/qlsv/databinding/ActivityAddStudenttoSubjectBinding.java
+ com.deitel.qlsv.databinding.ActivityAddStudenttoSubjectBinding
+com/deitel/qlsv/databinding/ListsubjectBinding.java
+ com.deitel.qlsv.databinding.ListsubjectBinding
+com/deitel/qlsv/databinding/ListsubjecttableBinding.java
+ com.deitel.qlsv.databinding.ListsubjecttableBinding
+com/deitel/qlsv/databinding/ActivityShowAllStudentBinding.java
+ com.deitel.qlsv.databinding.ActivityShowAllStudentBinding
+com/deitel/qlsv/ActivityAddStudent.java
+ com.deitel.qlsv.ActivityAddStudent
+ com.deitel.qlsv.ActivityAddStudent$1
+ com.deitel.qlsv.ActivityAddStudent$2
+ com.deitel.qlsv.ActivityAddStudent$3
+com/deitel/qlsv/databinding/ActivityScoreBinding.java
+ com.deitel.qlsv.databinding.ActivityScoreBinding
+com/deitel/qlsv/databinding/ListsubjectstudentBinding.java
+ com.deitel.qlsv.databinding.ListsubjectstudentBinding
+com/deitel/qlsv/models/Subject.java
+ com.deitel.qlsv.models.Subject
+com/deitel/qlsv/FragmentSubjectStudent.java
+ com.deitel.qlsv.FragmentSubjectStudent
+com/deitel/qlsv/databinding/DialogexitBinding.java
+ com.deitel.qlsv.databinding.DialogexitBinding
+com/deitel/qlsv/adapter/adapterallstudent.java
+ com.deitel.qlsv.adapter.adapterallstudent
+ com.deitel.qlsv.adapter.adapterallstudent$1
+ com.deitel.qlsv.adapter.adapterallstudent$2
+ com.deitel.qlsv.adapter.adapterallstudent$3
+com/deitel/qlsv/databinding/DialogupdatesubjectBinding.java
+ com.deitel.qlsv.databinding.DialogupdatesubjectBinding
+com/deitel/qlsv/databinding/FragmentTimetableBinding.java
+ com.deitel.qlsv.databinding.FragmentTimetableBinding
+com/deitel/qlsv/adapter/adaptersubject.java
+ com.deitel.qlsv.adapter.adaptersubject
+ com.deitel.qlsv.adapter.adaptersubject$1
+ com.deitel.qlsv.adapter.adaptersubject$2
+ com.deitel.qlsv.adapter.adaptersubject$3
+com/deitel/qlsv/ActivityUpdateSubject.java
+ com.deitel.qlsv.ActivityUpdateSubject
+ com.deitel.qlsv.ActivityUpdateSubject$1
+ com.deitel.qlsv.ActivityUpdateSubject$2
+com/deitel/qlsv/adapter/adapterstudent.java
+ com.deitel.qlsv.adapter.adapterstudent
+ com.deitel.qlsv.adapter.adapterstudent$1
+ com.deitel.qlsv.adapter.adapterstudent$2
+ com.deitel.qlsv.adapter.adapterstudent$3
+com/deitel/qlsv/databinding/ActivitySubjectStudentBinding.java
+ com.deitel.qlsv.databinding.ActivitySubjectStudentBinding
+com/deitel/qlsv/databinding/ActivityUpdateStudentBinding.java
+ com.deitel.qlsv.databinding.ActivityUpdateStudentBinding
+com/deitel/qlsv/databinding/ActivityAddSubjectBinding.java
+ com.deitel.qlsv.databinding.ActivityAddSubjectBinding
+com/deitel/qlsv/databinding/FragmentScoreBoardBinding.java
+ com.deitel.qlsv.databinding.FragmentScoreBoardBinding
+com/deitel/qlsv/databinding/ActivityAddStudentBinding.java
+ com.deitel.qlsv.databinding.ActivityAddStudentBinding
+com/deitel/qlsv/databinding/ListscoresubjectBinding.java
+ com.deitel.qlsv.databinding.ListscoresubjectBinding
+com/deitel/qlsv/ActivityUpdateStudent.java
+ com.deitel.qlsv.ActivityUpdateStudent
+ com.deitel.qlsv.ActivityUpdateStudent$1
+ com.deitel.qlsv.ActivityUpdateStudent$2
+ com.deitel.qlsv.ActivityUpdateStudent$3
+com/deitel/qlsv/databinding/FragmentSubjectStudentBinding.java
+ com.deitel.qlsv.databinding.FragmentSubjectStudentBinding
+com/deitel/qlsv/ActivitySubjectStudent.java
+ com.deitel.qlsv.ActivitySubjectStudent
+com/deitel/qlsv/FragmentScoreBoard.java
+ com.deitel.qlsv.FragmentScoreBoard
+com/deitel/qlsv/databinding/ActivityInformationStudentBinding.java
+ com.deitel.qlsv.databinding.ActivityInformationStudentBinding
+com/deitel/qlsv/databinding/ActivityStudentBinding.java
+ com.deitel.qlsv.databinding.ActivityStudentBinding
+com/deitel/qlsv/ActivityAddSubject.java
+ com.deitel.qlsv.ActivityAddSubject
+ com.deitel.qlsv.ActivityAddSubject$1
+ com.deitel.qlsv.ActivityAddSubject$2
+ com.deitel.qlsv.ActivityAddSubject$3
+com/deitel/qlsv/adapter/VPAdapter.java
+ com.deitel.qlsv.adapter.VPAdapter
+com/deitel/qlsv/databinding/DialogaddBinding.java
+ com.deitel.qlsv.databinding.DialogaddBinding
+com/deitel/qlsv/ActivityAdmin.java
+ com.deitel.qlsv.ActivityAdmin
+ com.deitel.qlsv.ActivityAdmin$1
+ com.deitel.qlsv.ActivityAdmin$2
+ com.deitel.qlsv.ActivityAdmin$3
+ com.deitel.qlsv.ActivityAdmin$4
+com/deitel/qlsv/ActivityScore.java
+ com.deitel.qlsv.ActivityScore
+ com.deitel.qlsv.ActivityScore$1
+com/deitel/qlsv/databinding/DialogaddstudentBinding.java
+ com.deitel.qlsv.databinding.DialogaddstudentBinding
+com/deitel/qlsv/databinding/DialogupdatestudentBinding.java
+ com.deitel.qlsv.databinding.DialogupdatestudentBinding
+com/deitel/qlsv/adapter/adapterscoreboard.java
+ com.deitel.qlsv.adapter.adapterscoreboard
+com/deitel/qlsv/ActivityLogin.java
+ com.deitel.qlsv.ActivityLogin
+ com.deitel.qlsv.ActivityLogin$1
+ com.deitel.qlsv.ActivityLogin$2
+ com.deitel.qlsv.ActivityLogin$3
+ com.deitel.qlsv.ActivityLogin$4
+com/deitel/qlsv/ActivityStudent.java
+ com.deitel.qlsv.ActivityStudent
+ com.deitel.qlsv.ActivityStudent$1
+ com.deitel.qlsv.ActivityStudent$2
+ com.deitel.qlsv.ActivityStudent$3
+com/deitel/qlsv/databinding/ListstudentsubjectBinding.java
+ com.deitel.qlsv.databinding.ListstudentsubjectBinding
+com/deitel/qlsv/adapter/adapteraddsttosbj.java
+ com.deitel.qlsv.adapter.adapteraddsttosbj
+ com.deitel.qlsv.adapter.adapteraddsttosbj$1
+com/deitel/qlsv/models/SubjectStudent.java
+ com.deitel.qlsv.models.SubjectStudent
+com/deitel/qlsv/FragmentStudentInformation.java
+ com.deitel.qlsv.FragmentStudentInformation
+ com.deitel.qlsv.FragmentStudentInformation$1

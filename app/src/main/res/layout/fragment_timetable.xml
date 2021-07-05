@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentTimetable">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSubjectStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#044763"
+        app:titleTextColor="@color/white"
+        app:title="Thời khóa biểu của bạn"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 2"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 3"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 4"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 5"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 6"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            >
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thứ 7"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            >
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:background="@drawable/timetable"
+        >
+        <ListView
+            android:id="@+id/listviewSubjectStudent2"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"></ListView>
+        <ListView
+            android:id="@+id/listviewSubjectStudent3"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"></ListView>
+        <ListView
+            android:id="@+id/listviewSubjectStudent4"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"></ListView>
+        <ListView
+            android:id="@+id/listviewSubjectStudent5"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"></ListView>
+
+        <ListView
+            android:id="@+id/listviewSubjectStudent6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"></ListView>
+
+        <ListView
+            android:id="@+id/listviewSubjectStudent7"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+
+            android:layout_height="wrap_content"></ListView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

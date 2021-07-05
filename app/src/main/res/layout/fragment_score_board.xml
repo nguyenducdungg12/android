@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentScoreBoard"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarSubjectStudent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#044763"
+        app:titleTextColor="@color/white"
+        app:title="Điểm số của bạn"></androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:id="@+id/listviewSubjectStudentScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</LinearLayout>
