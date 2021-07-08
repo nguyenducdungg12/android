@@ -1,130 +1,126 @@
 [
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_information_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_student_information.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\fragment_student_information.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_studentto_subject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_add_studentto_subject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogexit.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogexit.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogaddstudent.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogaddstudent.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogaddstudent.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogaddstudent.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogdelete.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogdelete.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubjectstudent.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\listsubjectstudent.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listscoresubject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\listscoresubject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_update_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\spinneritem.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\spinneritem.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogdeletestudent.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogdeletestudent.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_score_board.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\fragment_score_board.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_admin.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_admin.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_admin.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\liststudent.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\liststudent.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogupdatesubject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogupdatesubject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_subject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_add_subject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_information_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_information_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_timetable.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\fragment_timetable.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_subject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject_information.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_subject_information.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_student_information.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\fragment_student_information.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_score.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_score.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogexit.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogexit.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogadd.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogadd.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogupdatestudent.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogupdatestudent.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_add_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogdelete.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogdelete.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogdeletestudent.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogdeletestudent.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_score.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_score.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_timetable.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\fragment_timetable.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\listsubject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_login.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_subject_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\fragment_subject_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\liststudent.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\liststudent.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogadd.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogadd.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubjectstudent.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\listsubjectstudent.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_all_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_show_all_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_update_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\liststudentsubject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\liststudentsubject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\liststudentsubject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\liststudentsubject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubjecttable.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\listsubjecttable.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\listsubject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_subject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listsubjecttable.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\listsubjecttable.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_subject_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_show_all_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_show_all_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_subject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_update_subject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_subject_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_subject_information.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_subject_information.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_subject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_add_subject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\listscoresubject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\listscoresubject.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogupdatestudent.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\dialogupdatestudent.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_score_board.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\fragment_score_board.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_subject_student.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\fragment_subject_student.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_student.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\activity_add_student.xml"
     },
     {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_studentto_subject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_add_studentto_subject.xml"
-    },
-    {
-        "merged": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_subject.xml",
-        "source": "C:\\Users\\ADMIN\\Desktop\\android-dung1\\app\\src\\main\\res\\layout\\activity_update_subject.xml"
+        "merged": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialogupdatesubject.xml",
+        "source": "C:\\Users\\ADMIN\\Desktop\\moinhat\\app\\src\\main\\res\\layout\\dialogupdatesubject.xml"
     }
 ]

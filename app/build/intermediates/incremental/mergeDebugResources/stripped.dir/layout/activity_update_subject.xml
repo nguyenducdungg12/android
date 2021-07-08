@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAddSubject"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:text="Sửa Môn học"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"></TextView>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Tiêu đề môn học"
+        android:id="@+id/EditTextUpdateSubjectTitle"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+    </EditText>
+    <EditText
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:hint="Số tính chỉ"
+        android:id="@+id/EditTextUpdateSubjectCredit"
+        android:layout_width="300dp"
+        android:layout_height="60dp">
+
+    </EditText>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Thời gian bắt đầu"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        ></TextView>
+    <Spinner
+        android:id="@+id/spinnerTimeUpdate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+    <EditText
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center"
+    android:hint="Địa điểm"
+    android:id="@+id/EditTextUpdateSubjectPlace"
+    android:layout_width="300dp"
+    android:layout_height="60dp">
+
+
+</EditText>
+    <TextView
+        android:layout_height="wrap_content"
+        android:text="Buổi học"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        ></TextView>
+    <Spinner
+        android:id="@+id/spinnerDayUpdate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <Button
+        android:id="@+id/buttonUpdateSubject"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sửa">
+
+    </Button>
+
+
+</LinearLayout>

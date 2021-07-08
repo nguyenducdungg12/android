@@ -30,7 +30,7 @@ public class ActivityShowAllStudent extends AppCompatActivity {
     ArrayList<Student> ArrayListStudent;
     database database;
     adapterallstudent adapterallstudent;
-
+    int count = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +66,14 @@ public class ActivityShowAllStudent extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
+    }
+    public void onBackPressed(){
+        count++;
+        if(count>=1){
+            Intent intent = new Intent(ActivityShowAllStudent.this, ActivityAdmin.class);
+            startActivity(intent);
+            finish();
+        }
     }
     public void information(final int pos){
         Cursor cursor = database.getDataAllStudent();

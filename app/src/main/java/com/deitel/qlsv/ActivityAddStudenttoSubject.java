@@ -99,7 +99,7 @@ public class ActivityAddStudenttoSubject extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
     public void information(final int pos){
-        Cursor cursor = database.getDataStudent(id_subject);
+        Cursor cursor = database.getDataAllStudent();
         while (cursor.moveToNext()){
             int id = cursor.getInt(0);
 

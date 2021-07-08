@@ -30,7 +30,7 @@ public class ActivityLogin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Boolean checkStudent= database.CheckStudentLogin(loginmssv.getText().toString());
-                if(loginmssv.getText().toString().trim().equals("admin")&&loginpassword.getText().toString().trim().equals("admin")) {
+                if(loginmssv.getText().toString().trim().equals("admin")&&loginpassword.getText().toString().equals("admin")) {
                     Intent intent = new Intent(ActivityLogin.this, ActivityAdmin.class);
                     startActivity(intent);
                 }

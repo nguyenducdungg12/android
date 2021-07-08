@@ -151,13 +151,13 @@ public class ActivityStudent extends AppCompatActivity {
                 String sex = cursor.getString(2);
                 String code = cursor.getString(3);
                 String birthday = cursor.getString(4);
-                int id_subject = cursor.getInt(5);
+//                int id_subject = cursor.getInt(5);
 
                 intent.putExtra("name",name);
                 intent.putExtra("sex",sex);
                 intent.putExtra("code",code);
                 intent.putExtra("birthday",birthday);
-                intent.putExtra("id_subject",id_subject);
+//                intent.putExtra("id_subject",id_subject);
 
                 startActivity(intent);
             }

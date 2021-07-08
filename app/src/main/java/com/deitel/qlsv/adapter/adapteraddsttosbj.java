@@ -47,6 +47,7 @@ public class adapteraddsttosbj extends BaseAdapter {
 
         TextView txtName = convertView.findViewById(R.id.TextViewSubjects);
         TextView txtCode = convertView.findViewById(R.id.TextViewStudentCode);
+
         ImageButton imageInformation = (ImageButton)convertView.findViewById(R.id.studentsubjectinformation);
 
         Student student = ArrayListStudent.get(position);
